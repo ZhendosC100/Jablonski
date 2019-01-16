@@ -1,0 +1,376 @@
+@import url(fonts.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: "GothaReg";
+}
+
+body {
+  background: #161718;
+  color: #ffffff;
+  width: 100%;
+}
+
+.header {
+  width: 70%;
+}
+
+.h_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*.social
+    background: #da182e
+    border-radius: 13px
+    width: 80px
+    height: 30px*/
+.ss {
+  margin: 2px;
+  background: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.ss:hover {
+  background: #da182e;
+  cursor: pointer;
+}
+
+.logo {
+  margin: -198px 0 0 -196px;
+}
+
+.lng_opt,
+.lng_opt-inf_dwn,
+.lng_opt-call,
+.lng_opt-opn,
+.lng_opt-img_text,
+.lng_opt-price,
+.lng_opt-rules {
+  display: none;
+}
+
+.lng_opt-inf_dwn {
+  width: 70%;
+}
+
+.active {
+  display: block;
+}
+
+.info-up, .lang-block, .info-down, .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info-up {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 36px 0 25px 0;
+}
+
+.line {
+  border: 1px solid #212121;
+  height: 2px;
+  margin: auto 9%;
+  max-width: 86%;
+}
+
+#select {
+  border: none;
+  margin: auto 0;
+  margin-left: 25px;
+  height: 20px;
+  text-align: right;
+  color: #da182e;
+  border-bottom: 1px dotted #da182e;
+  background: #161718;
+}
+
+#select:hover {
+  cursor: pointer;
+  border: none;
+}
+
+option {
+  border: none;
+}
+
+.soc_img {
+  padding: 7px 0 0 7px;
+}
+
+.info-down {
+  margin: 25px 0 36px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.info-down-inf, .lng_opt-call {
+  text-align: center;
+}
+
+.info-down-inf {
+  padding-top: 10px;
+  height: 38px;
+}
+
+.info-down-inf-first_pos {
+  padding-top: 0;
+  text-align: center;
+}
+
+.info-down-inf:hover {
+  padding-top: 9px;
+  height: 36px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 3px 2px #ffffff;
+          box-shadow: 1px 1px 3px 2px #ffffff;
+  color: #da182e;
+  cursor: pointer;
+}
+
+.info-down-inf-first_pos:hover {
+  height: 36px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 3px 2px #ffffff;
+          box-shadow: 1px 1px 3px 2px #ffffff;
+  color: #da182e;
+  cursor: pointer;
+}
+
+.call {
+  color: #da182e;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px dotted #da182e;
+  padding-bottom: 1px;
+}
+
+.call:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.h_img_box {
+  margin: 0 auto;
+  position: relative;
+}
+
+.dmg_iphone {
+  position: absolute;
+  top: -85px;
+  left: 11px;
+}
+
+.lng_opt-img_text {
+  margin-left: 100px;
+}
+
+.repair {
+  margin-left: 48%;
+  font-family: "GothaBol";
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+.button,
+.game_button {
+  background: #da182e;
+  border-radius: 66px;
+  -webkit-box-shadow: 1px 0px 1px 4px #5d171e;
+          box-shadow: 1px 0px 1px 4px #5d171e;
+  height: 45px;
+  width: 176px;
+  padding-top: 14px;
+  text-align: center;
+  margin-left: 48%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 1px 2px 3px 6px #f0162b;
+          box-shadow: 1px 2px 3px 6px #f0162b;
+}
+
+.price_box {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 340px;
+}
+
+.lng_opt-price {
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: auto;
+  color: black;
+  padding: 83px;
+  position: relative;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.cena {
+  margin: 0;
+  font-family: "GothaBol";
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -2.39px;
+}
+
+.model {
+  margin: 40px 0 105px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.74px;
+}
+
+.price-list {
+  margin: 0;
+  padding: 15px 0 0 15px;
+  width: 502px;
+  height: 47px;
+  border-radius: 1px;
+}
+
+p.price-list:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+
+.price_info {
+  color: black;
+  position: absolute;
+  top: 162px;
+  left: 400px;
+  width: 64%;
+}
+
+.price_info div {
+  text-align: center;
+}
+
+.model_select-dsn {
+  color: #f0162b;
+  padding-top: 10px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #f0162b;
+  margin-bottom: 5px;
+  width: 89%;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.model_select-dsn:hover {
+  -webkit-box-shadow: 0 0 3px 6px #ff0000;
+          box-shadow: 0 0 3px 6px #ff0000;
+  cursor: pointer;
+}
+
+.active_model {
+  color: #ffffff;
+  background-color: #ff0000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #cc0000), color-stop(87%, #ff0000));
+  background-image: linear-gradient(#cc0000 13%, #ff0000 87%);
+}
+
+.price_img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.img_phone {
+  position: absolute;
+  right: -81px;
+  top: 30px;
+}
+
+.text_price {
+  position: absolute;
+  top: 21px;
+  left: 220px;
+}
+
+.text_price-server {
+  margin: 0;
+  padding-top: 12px;
+  text-align: center;
+  height: 47px;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.game_img {
+  position: relative;
+}
+
+.random_one,
+.random_two,
+.random_three {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 19px;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+}
+
+.random_one {
+  top: 130px;
+  left: 220px;
+}
+
+.random_two {
+  top: 282px;
+  left: 92px;
+}
+
+.random_three {
+  top: 301px;
+  left: 346px;
+}
+
+.rules {
+  font-family: "GothaBol";
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rules_text {
+  width: 523px;
+  height: 183px;
+}
+/*# sourceMappingURL=style.css.map */
