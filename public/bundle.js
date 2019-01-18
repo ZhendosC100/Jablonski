@@ -152,13 +152,34 @@ function price() {
         if(request.readyState === 4 && request.status == 200){
             let data = JSON.parse(request.response);
 
-
-    for (let i = 0; i<price.length; i++){
-        x=i;
-        y=data.model[x];
-        price[i].innerHTML = y[x];
-        
+    function addDataServer (b) {
+        for (let i = 0; i<price.length; i++){
+            x=i;
+            y=data.model[x];
+            price[i].innerHTML = y[b];
+            
+        }
     }
+    
+    function sortModel(modelName, target) {
+        for (let i = 0; i < modelName.length; i++){
+            if(target == modelName[i]){
+                addDataServer(3);
+            }
+        }
+    }
+
+    body.addEventListener('click', (event) => {
+        let target = event.target;
+        console.log(target);
+    
+        if(target && target.classList.contains('model_select-dsn')) {
+            sortModel(model, target);
+            console.log('ok 1');
+        }
+    });
+
+
 
         } else {
             console.log('oops');
