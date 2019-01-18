@@ -1,7 +1,38 @@
 export default function price() {
     let price = document.querySelectorAll('.text_price-server'),
         model = document.querySelectorAll('.model_select-dsn'),
-        body = document.querySelector('body');
+        body = document.querySelector('body'),
+        x;
+
+//giving data from server
+
+
+    let request = new XMLHttpRequest();
+
+    request.open('GET', 'price_item.json');
+    request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    request.send();
+    request.addEventListener('readystatechange', function() {
+        if(request.readyState === 4 && request.status == 200){
+            let data = JSON.parse(request.response);
+
+
+    for (let i = 0; i<price.length; i++){
+        x=i;
+        price[i].innerHTML = data.model[x];
+        
+    }
+
+        } else {
+            console.log('oops');
+            for (let i = 0; i<price.length; i++){
+                price[i].innerHTML = "oops..";
+            }
+        }
+
+    });
+
+
 
 // active/disactive priceTab
 
@@ -35,5 +66,6 @@ body.addEventListener('click', (event) => {
         console.log('ok');
     }
 });
+
 console.log('module price OK');
 }
