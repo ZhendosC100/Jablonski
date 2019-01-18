@@ -28,7 +28,7 @@ export default function price() {
     function sortModel(modelName, target) {
         for (let i = 0; i < modelName.length; i++){
             if(target == modelName[i]){
-                addDataServer(3);
+                addDataServer(i);
             }
         }
     }
