@@ -44,11 +44,8 @@ export default function price() {
     
         if(target && target.classList.contains('model_select-dsn')) {
             sortModel(model, target);
-            console.log('ok 1');
         }
     });
-
-
 
         } else {
             console.log('oops');
@@ -58,8 +55,6 @@ export default function price() {
         }
 
     });
-
-
 
 // active/disactive priceTab
 
@@ -94,6 +89,6 @@ body.addEventListener('click', (event) => {
     }
 });
 
-model[0].classList.add('active_model');
+//model[0].classList.add('active_model');
 console.log('module price OK');
 }
