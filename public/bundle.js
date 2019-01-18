@@ -138,7 +138,7 @@ function price() {
     let price = document.querySelectorAll('.text_price-server'),
         model = document.querySelectorAll('.model_select-dsn'),
         body = document.querySelector('body'),
-        x;
+        x, y;
 
 //giving data from server
 
@@ -155,7 +155,8 @@ function price() {
 
     for (let i = 0; i<price.length; i++){
         x=i;
-        price[i].innerHTML = data.model[x];
+        y=data.model[x];
+        price[i].innerHTML = y[x];
         
     }
 
