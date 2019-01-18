@@ -151,13 +151,17 @@ function price() {
     request.addEventListener('readystatechange', function() {
         if(request.readyState === 4 && request.status == 200){
             let data = JSON.parse(request.response);
+            
+            // x=0;
+            // y=data.model[x];
+            // price[1].innerHTML = y[1];
 
     function addDataServer (b) {
         for (let i = 0; i<price.length; i++){
-            x=i;
+            x=b;
             y=data.model[x];
             
-            price[i].innerHTML = y[b];
+            price[i].innerHTML = y[i];
             
         }
     }
@@ -226,6 +230,7 @@ body.addEventListener('click', (event) => {
     }
 });
 
+model[0].classList.add('active_model');
 console.log('module price OK');
 }
 
