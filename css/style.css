@@ -166,16 +166,23 @@ option {
 .h_img_box {
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
 
 .dmg_iphone {
+  display: block;
+  width: 789px;
+  height: 700px;
   position: absolute;
   top: -85px;
   left: 11px;
+  z-index: -1;
 }
 
 .lng_opt-img_text {
+  width: 100%;
   margin-left: 100px;
+  z-index: 3;
 }
 
 .repair {
