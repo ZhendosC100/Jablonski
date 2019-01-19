@@ -23,10 +23,8 @@ export default function price() {
     function addDataServer (b) {
         for (let i = 0; i<price.length; i++){
             x=b;
-            y=data.model[x];
-            
-            price[i].innerHTML = y[i];
-            
+            y=data.model[x];    
+            price[i].innerHTML = y[i];   
         }
     }
     
@@ -40,7 +38,7 @@ export default function price() {
 
     body.addEventListener('click', (event) => {
         let target = event.target;
-        console.log(target);
+        //console.log(target);
     
         if(target && target.classList.contains('model_select-dsn')) {
             sortModel(model, target);
@@ -50,7 +48,7 @@ export default function price() {
         } else {
             console.log('oops');
             for (let i = 0; i<price.length; i++){
-                price[i].innerHTML = "oops..";
+                price[i].innerHTML = "--- zł";
             }
         }
 
@@ -81,7 +79,7 @@ function sortTab(tabName, target) {
 
 body.addEventListener('click', (event) => {
     let target = event.target;
-    console.log(target);
+    //console.log(target);
 
     if(target && target.classList.contains('model_select-dsn')) {
         sortTab(model, target);
