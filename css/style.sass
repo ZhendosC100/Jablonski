@@ -39,6 +39,7 @@ body
     height: 30px*/
 
 .ss
+    display: block
     margin: 2px
     background: #ffffff
     width: 30px
@@ -188,7 +189,8 @@ option
     font-size: 14px
     font-weight: 500
 
-.button:hover
+.button:hover,
+.game_button:hover
     @include crsr
     border: 1px solid #ffffff
     box-shadow: 1px 2px 3px 6px #f0162b
@@ -197,6 +199,7 @@ option
     position: relative
     margin: 0 auto
     margin-top: 340px
+    z-index: 1
 
 .lng_opt-price
     background-color: #ffffff
@@ -207,6 +210,7 @@ option
     position: relative
     width: 86%
     margin: 0 auto
+    z-index: -1
 
 .cena
     margin: 0
@@ -237,6 +241,7 @@ p.price-list:nth-child(2n)
     top: 162px
     left: 400px
     width: 64%
+    z-index: 2
 
 .price_info div
     text-align: center
