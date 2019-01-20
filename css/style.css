@@ -1,4 +1,21 @@
 @import url(fonts.css);
+@-webkit-keyframes activated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes activated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -64,6 +81,10 @@ body {
 
 .active {
   display: block;
+  -webkit-animation-name: activated;
+          animation-name: activated;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .info-up, .lang-block, .info-down, .social {

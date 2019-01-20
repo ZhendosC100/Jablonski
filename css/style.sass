@@ -15,6 +15,12 @@ $r_color: #da182e
         color: $r_color
         @include crsr
     
+@keyframes activated
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+    
 *
     box-sizing: border-box
     outline: none
@@ -67,6 +73,8 @@ body
 
 .active
     display: block 
+    animation-name: activated
+    animation-duration: 3s 
 
 .info-up, .lang-block, .info-down, .social
     @include flexable
