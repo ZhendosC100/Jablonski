@@ -9,15 +9,16 @@ export default function language() {
         price_box = document.querySelectorAll('.lng_opt-price'),
         rules_box = document.querySelectorAll('.lng_opt-rules'),
         s = 0;
-    let langNonActive = (b, k) =>{
-        let name_box = k;
+
+    let langNonActive = (b, name_box) =>{
+        //let name_box = k;
         for(let i = b; i < name_box.length; i++){
             name_box[i].classList.remove('active');
         }
     };
     
-    let langActive = (a, z) => {
-       let name_box = z;
+    let langActive = (a, name_box) => {
+       //let name_box = z;
         name_box[a].classList.add('active');
     };
     

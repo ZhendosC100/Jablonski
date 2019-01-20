@@ -118,9 +118,15 @@ option
     text-align: center
 
 .info-down-inf
+    display: block
+    text-decoration: none
+    color: white
     padding-top: 10px
     height: 38px
     &-first_pos
+        display: block
+        text-decoration: none
+        color: white
         padding-top: 0
         text-align: center
 
@@ -311,6 +317,12 @@ p.price-list:nth-child(2n)
 .random_three
     top: 301px
     left: 346px
+
+.random_one:hover, 
+.random_two:hover,
+.random_three:hover
+    @include crsr
+    color: yellow
 
 .rules
     font-family: "GothaBol"
