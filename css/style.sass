@@ -14,6 +14,15 @@ $r_color: #da182e
         box-shadow: 1px 1px 3px 2px #ffffff
         color: $r_color
         @include crsr
+
+@mixin info_blocks
+        background-color: #ffffff
+        border-radius: 50px
+        height: auto
+        color: black
+        padding: 83px
+        width: 86%
+        margin: 0 auto
     
 @keyframes activated
   0%
@@ -65,7 +74,8 @@ body
 .lng_opt-opn, 
 .lng_opt-img_text, 
 .lng_opt-price,
-.lng_opt-rules
+.lng_opt-rules,
+.lng_opt-comments
     display: none
 
 .lng_opt-inf_dwn
@@ -210,14 +220,8 @@ option
     z-index: 1
 
 .lng_opt-price
-    background-color: #ffffff
-    border-radius: 50px
-    height: auto
-    color: black
-    padding: 83px
+    @include info_blocks
     position: relative
-    width: 86%
-    margin: 0 auto
     z-index: -1
 
 .cena
@@ -346,3 +350,13 @@ p.price-list:nth-child(2n)
 .rules_text
     width: 523px
     height: 183px
+
+#feedback
+    @include info_blocks
+
+.image_block
+    display: flex
+    justify-content: space-around
+
+.text_feedback
+    width: 30%

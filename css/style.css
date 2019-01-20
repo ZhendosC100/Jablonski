@@ -71,7 +71,8 @@ body {
 .lng_opt-opn,
 .lng_opt-img_text,
 .lng_opt-price,
-.lng_opt-rules {
+.lng_opt-rules,
+.lng_opt-comments {
   display: none;
 }
 
@@ -257,9 +258,9 @@ option {
   height: auto;
   color: black;
   padding: 83px;
-  position: relative;
   width: 86%;
   margin: 0 auto;
+  position: relative;
   z-index: -1;
 }
 
@@ -418,5 +419,27 @@ p.price-list:nth-child(2n) {
 .rules_text {
   width: 523px;
   height: 183px;
+}
+
+#feedback {
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: auto;
+  color: black;
+  padding: 83px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.image_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text_feedback {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */
