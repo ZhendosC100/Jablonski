@@ -8,6 +8,7 @@ export default function language() {
         repair_box = document.querySelectorAll('.lng_opt-img_text'),
         price_box = document.querySelectorAll('.lng_opt-price'),
         rules_box = document.querySelectorAll('.lng_opt-rules'),
+        feedback_box = document.querySelectorAll('.lng_opt-comments'),
         s = 0;
 
     let langNonActive = (b, name_box) =>{
@@ -33,6 +34,7 @@ export default function language() {
         langNonActive(0, repair_box);
         langNonActive(0, price_box);
         langNonActive(0, rules_box);
+        langNonActive(0, feedback_box);
 
 
         langActive(s, lang_box);
@@ -42,6 +44,7 @@ export default function language() {
         langActive(s, repair_box);
         langActive(s, price_box);
         langActive(s, rules_box);
+        langActive(s, feedback_box);
 
     });
     console.log(s);   

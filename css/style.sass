@@ -29,6 +29,10 @@ $r_color: #da182e
     opacity: 0
   100%
     opacity: 1
+
+@mixin animated
+        animation-name: activated
+        animation-duration: 1.6s
     
 *
     box-sizing: border-box
@@ -113,7 +117,7 @@ body
     margin: auto 0
     margin-left: 25px 
     height: 20px
-    text-align: right
+    text-align: left
     color: $r_color
     border-bottom: 1px dotted $r_color
     background: #161718
@@ -152,9 +156,11 @@ option
 .info-down-inf:hover
     padding-top: 9px
     @include menu_hover
+    @include animated
 
 .info-down-inf-first_pos:hover
         @include menu_hover
+        @include animated
 
 
 .call
@@ -352,11 +358,54 @@ p.price-list:nth-child(2n)
     height: 183px
 
 #feedback
+    position: relative
     @include info_blocks
+    z-index: 1
+
+.left_arrow
+    position: absolute
+    top: 50%
+    left: 7%
+    opacity: 0.3
+    z-index: 2
+    
+
+.right_arrow
+    position: absolute
+    top: 50%
+    right: 7%
+    opacity: 0.3
+    z-index: 2
+
+.left_arrow:hover,
+.right_arrow:hover,
+    @include animated
+    @include crsr
+
 
 .image_block
     display: flex
     justify-content: space-around
 
+.img_box
+    margin-left: 7%
+    width: auto
+
+
 .text_feedback
-    width: 30%
+    width: 40%
+    margin-right: 7%
+
+.dots_box
+    display: flex
+    justify-content: space-around
+    width: 4%
+    position: absolute
+    left: 50%
+    bottom: 10%
+
+.dots
+    background-color: #fab8be
+    height: 10px
+    width: 10px
+    border-radius: 50%
