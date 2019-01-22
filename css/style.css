@@ -163,7 +163,7 @@ option {
 .info-down-inf:hover {
   padding-top: 9px;
   height: 36px;
-  border-radius: 4px;
+  border-radius: 9px;
   -webkit-box-shadow: 1px 1px 3px 2px #ffffff;
           box-shadow: 1px 1px 3px 2px #ffffff;
   color: #da182e;
@@ -176,7 +176,7 @@ option {
 
 .info-down-inf-first_pos:hover {
   height: 36px;
-  border-radius: 4px;
+  border-radius: 9px;
   -webkit-box-shadow: 1px 1px 3px 2px #ffffff;
           box-shadow: 1px 1px 3px 2px #ffffff;
   color: #da182e;
@@ -265,7 +265,7 @@ option {
   border-radius: 50px;
   height: auto;
   color: black;
-  padding: 83px;
+  padding: 5%;
   width: 86%;
   margin: 0 auto;
   position: relative;
@@ -435,9 +435,10 @@ p.price-list:nth-child(2n) {
   border-radius: 50px;
   height: auto;
   color: black;
-  padding: 83px;
+  padding: 5%;
   width: 86%;
   margin: 0 auto;
+  width: 70%;
   z-index: 1;
 }
 
@@ -479,6 +480,15 @@ p.price-list:nth-child(2n) {
   width: auto;
 }
 
+.title_feedback {
+  color: #161718;
+  font-family: "GothaBol";
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: -1% 0 4% 7%;
+}
+
 .text_feedback {
   width: 40%;
   margin-right: 7%;
@@ -501,5 +511,55 @@ p.price-list:nth-child(2n) {
   height: 10px;
   width: 10px;
   border-radius: 50%;
+}
+
+.dots:hover {
+  background-color: #f0162b;
+  cursor: pointer;
+}
+
+.dots_active {
+  background-color: #f0162b;
+}
+
+.about_us {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.about {
+  position: absolute;
+  top: -247px;
+  left: 0;
+}
+
+.lng_opt-about_us {
+  width: 30%;
+  margin: 11% 13% 0 0;
+}
+
+.title_about {
+  font-family: "GothaBol";
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.about_call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.about_number {
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */
