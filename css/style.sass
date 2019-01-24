@@ -23,7 +23,23 @@ $r_color: #da182e
         padding: 5%
         width: 86%
         margin: 0 auto
-    
+
+@mixin buttons
+        background: $r_color
+        border-radius: 66px
+        box-shadow: 1px 0px 1px 4px #5d171e
+        height: 45px
+        width: 176px
+        padding-top: 14px
+        text-align: center
+        font-size: 14px
+        font-weight: 500
+
+@mixin buttons_hover 
+        @include crsr
+        border: 1px solid #ffffff
+        box-shadow: 1px 2px 3px 6px #f0162b
+        
 @keyframes activated
   0%
     opacity: 0
@@ -79,7 +95,9 @@ body
 .lng_opt-img_text, 
 .lng_opt-price,
 .lng_opt-rules,
-.lng_opt-comments
+.lng_opt-comments,
+.lng_opt-promo_start,
+#promo
     display: none
 
 .lng_opt-inf_dwn
@@ -146,12 +164,14 @@ option
     color: white
     padding-top: 10px
     height: 38px
+    font-weight: 800
     &-first_pos
         display: block
         text-decoration: none
         color: white
         padding-top: 0
         text-align: center
+        font-weight: 800
 
 .info-down-inf:hover
     padding-top: 9px
@@ -202,24 +222,12 @@ option
     text-transform: uppercase
     line-height: 80px
 
-.button,
-.game_button
-    background: $r_color
-    border-radius: 66px
-    box-shadow: 1px 0px 1px 4px #5d171e
-    height: 45px
-    width: 176px
-    padding-top: 14px
-    text-align: center
+.button
+    @include buttons
     margin-left: 48%
-    font-size: 14px
-    font-weight: 500
 
-.button:hover,
-.game_button:hover
-    @include crsr
-    border: 1px solid #ffffff
-    box-shadow: 1px 2px 3px 6px #f0162b
+.button:hover
+    @include buttons_hover
 
 .price_box
     position: relative
@@ -308,6 +316,16 @@ p.price-list:nth-child(2n)
     text-align: center
     height: 47px
 
+//##Game Box##
+#promo_start
+    @include info_blocks
+    background-color: #161718
+    text-align: center
+    color: white
+    padding-top: 20px
+    margin-top: 110px
+    margin-bottom: 90px
+
 .game
     display: flex
     justify-content: space-around
@@ -359,6 +377,25 @@ p.price-list:nth-child(2n)
     width: 523px
     height: 183px
 
+.buttons
+    display: flex
+    justify-content: space-around
+
+.game_button,
+.button_start,
+.cancel_button
+    @include buttons
+
+.button_start
+    margin-left: 42%
+
+.game_button:hover,
+.button_start:hover,
+.cancel_button:hover
+    @include buttons_hover
+// ##Game Box end##
+
+// ##FeedBack box##   
 #feedback
     position: relative
     @include info_blocks
@@ -427,6 +464,7 @@ p.price-list:nth-child(2n)
 
 .dots_active
     background-color: #f0162b
+// ##Feedback Box end##
 
 .about_us
     position: relative
@@ -454,4 +492,10 @@ p.price-list:nth-child(2n)
     width: 100%
 
 .about_number
-    width: 100px
+    width: 33%
+
+.button_feedback
+    @include buttons
+
+.button_feedback:hover
+    @include buttons_hover

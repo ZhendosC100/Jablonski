@@ -8,6 +8,7 @@ export default function language() {
         repair_box = document.querySelectorAll('.lng_opt-img_text'),
         price_box = document.querySelectorAll('.lng_opt-price'),
         rules_box = document.querySelectorAll('.lng_opt-rules'),
+        promo_box = document.querySelectorAll('.lng_opt-promo_start'),
         feedback_box = document.querySelectorAll('.lng_opt-comments'),
         s = 0;
 
@@ -35,6 +36,8 @@ export default function language() {
         langNonActive(0, price_box);
         langNonActive(0, rules_box);
         langNonActive(0, feedback_box);
+        langNonActive(0, promo_box);
+
 
 
         langActive(s, lang_box);
@@ -45,6 +48,7 @@ export default function language() {
         langActive(s, price_box);
         langActive(s, rules_box);
         langActive(s, feedback_box);
+        langActive(s, promo_box);
 
     });
     console.log(s);   

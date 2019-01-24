@@ -97,6 +97,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parts_price__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/price */ "./src/parts/price.js");
 /* harmony import */ var _parts_lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/lang */ "./src/parts/lang.js");
+/* harmony import */ var _parts_game__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/game */ "./src/parts/game.js");
+
 
 
 
@@ -104,7 +106,40 @@ window.addEventListener('DOMContentLoaded', function(){
     'use strict';
     Object(_parts_lang__WEBPACK_IMPORTED_MODULE_1__["default"])();
     Object(_parts_price__WEBPACK_IMPORTED_MODULE_0__["default"])();
+    Object(_parts_game__WEBPACK_IMPORTED_MODULE_2__["default"])();
 });
+
+/***/ }),
+
+/***/ "./src/parts/game.js":
+/*!***************************!*\
+  !*** ./src/parts/game.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return game; });
+function game() {
+    let body_game = document.querySelector('body'),
+        lang_start = document.querySelector('.lng_opt-promo_start'),
+        promo = document.getElementById('promo'),
+        promo_start = document.getElementById('promo_start');
+
+    body_game.addEventListener('click', (e)=> {
+      let target = e.target;
+        if(target && target.classList.contains('button_start')) {
+            promo_start.style.display = 'none';
+            promo.style.display = 'flex';
+        }
+        
+        if(target && target.classList.contains('cancel_button')){
+            promo_start.style.display = 'block';
+            promo.style.display = 'none';
+        }
+    });
+}
 
 /***/ }),
 
@@ -128,6 +163,7 @@ function language() {
         repair_box = document.querySelectorAll('.lng_opt-img_text'),
         price_box = document.querySelectorAll('.lng_opt-price'),
         rules_box = document.querySelectorAll('.lng_opt-rules'),
+        promo_box = document.querySelectorAll('.lng_opt-promo_start'),
         feedback_box = document.querySelectorAll('.lng_opt-comments'),
         s = 0;
 
@@ -155,6 +191,8 @@ function language() {
         langNonActive(0, price_box);
         langNonActive(0, rules_box);
         langNonActive(0, feedback_box);
+        langNonActive(0, promo_box);
+
 
 
         langActive(s, lang_box);
@@ -165,6 +203,7 @@ function language() {
         langActive(s, price_box);
         langActive(s, rules_box);
         langActive(s, feedback_box);
+        langActive(s, promo_box);
 
     });
     console.log(s);   

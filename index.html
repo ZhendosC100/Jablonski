@@ -39,7 +39,7 @@
                     <div class="lang-block-option">
                         <p class="lng_opt active">Wybierz język: </p>
                         <p class="lng_opt">Select language: </p>
-                        <p class="lng_opt">Выберете язык: </p>
+                        <p class="lng_opt">Выберите язык: </p>
                     </div>
                     <select name="lang" id="select">
                         <option value="0">Polski</option>
@@ -75,7 +75,7 @@
                                 </a>
                             </div>
                             <div class="col-lg">
-                                <a href="#promo" class="info-down-inf">
+                                <a href="#promo_start" class="info-down-inf">
                                     Promocji
                                 </a>
                             </div>
@@ -106,7 +106,7 @@
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#promo" class="info-down-inf">
+                                <a href="#promo_start" class="info-down-inf">
                                     Promotions
                                 </a>
                             </div>
@@ -137,7 +137,7 @@
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#promo" class="info-down-inf">
+                                <a href="#promo_start" class="info-down-inf">
                                     Акции
                                 </a>
                             </div>
@@ -364,6 +364,20 @@
             </div>
         </div>
     </div>
+    <div id="promo_start">
+        <div class="lng_opt-promo_start active">
+            <p class="rules">Graj o zniżkach tu</p>
+            <div class="button_start">Graj</div>
+        </div>
+        <div class="lng_opt-promo_start">
+            <p class="rules">Play for a discont</p>
+            <div class="button_start">Play</div>
+        </div>
+        <div class="lng_opt-promo_start">
+            <p class="rules">Выиграй скидку</p>
+            <div class="button_start">Играть</div>
+        </div>
+    </div>
     <div id="promo" class="game">
         <div class="game_img">
             <img src="img/16-layers.png" alt="tree">
@@ -379,7 +393,11 @@
                 nostrum minima asperiores eveniet provident perferendis 
                 nam molestiae error id deserunt repellendus, consequatur laboriosam!
             </p>
-            <div class="game_button">Graj</div>
+            <div class="buttons">
+                <div class="game_button">Graj</div>
+                <div class="cancel_button">Cofnij</div>
+            </div>
+            
         </div>
         <div class="lng_opt-rules">
             <h2 class="rules">Play for a discont</h2>
@@ -389,7 +407,11 @@
                 nostrum minima asperiores eveniet provident perferendis 
                 nam molestiae error id deserunt repellendus, consequatur laboriosam!
             </p>
-            <div class="game_button">Play</div>
+            <div class="buttons">
+                <div class="game_button">Play</div>
+                <div class="cancel_button">Cancel</div>
+            </div>
+            
         </div>
         <div class="lng_opt-rules">
             <p class="rules">Выиграй скидку</p>
@@ -399,7 +421,11 @@
                 nostrum minima asperiores eveniet provident perferendis 
                 nam molestiae error id deserunt repellendus, consequatur laboriosam!
             </p>
-            <div class="game_button">Играть</div>
+            <div class="buttons">
+                <div class="game_button">Играть</div>
+                <div class="cancel_button">Отмена</div>
+            </div>
+            
         </div>
     </div>
     <div id="feedback">
@@ -466,11 +492,16 @@
                 nam molestiae error id deserunt repellendus, consequatur laboriosam!
             </p>
             <div class="about_call">
-                <div class="button">Proszę o kontakt</div>
+                <div class="button_feedback">Proszę o kontakt</div>
                 <p class="about_number">+48 792 193 919</p>
             </div>
         </div>
     </div>
+
+    <!-- Modal window of game_box -->
+    <aside id="popup_game">
+
+    </aside>
 
     <script src="public/bundle.js"></script>
 </body>
