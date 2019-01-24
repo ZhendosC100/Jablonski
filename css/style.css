@@ -393,10 +393,21 @@ p.price-list:nth-child(2n) {
   width: 86%;
   margin: 0 auto;
   margin-top: 120px;
+  z-index: 1;
 }
 
 .game_img {
   position: relative;
+}
+
+.cover_tree {
+  background-color: #161718;
+  position: absolute;
+  width: 510px;
+  height: 675px;
+  opacity: 0.8;
+  z-index: 3;
+  left: 0;
 }
 
 .random_one,

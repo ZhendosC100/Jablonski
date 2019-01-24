@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return game; });
 function game() {
     let body_game = document.querySelector('body'),
-        lang_start = document.querySelector('.lng_opt-promo_start'),
+        cover_tree = document.querySelector('.cover_tree'),
         promo = document.getElementById('promo'),
         promo_start = document.getElementById('promo_start');
 
@@ -137,6 +137,11 @@ function game() {
         if(target && target.classList.contains('cancel_button')){
             promo_start.style.display = 'block';
             promo.style.display = 'none';
+            cover_tree.style.zIndex = '3';
+        }
+
+        if(target && target.classList.contains('game_button')) {
+            cover_tree.style.zIndex = '-1';
         }
     });
 }
