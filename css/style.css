@@ -150,7 +150,7 @@ option {
   display: block;
   text-decoration: none;
   color: white;
-  padding-top: 10px;
+  padding-top: 12px;
   height: 38px;
   font-weight: 800;
 }
@@ -165,7 +165,7 @@ option {
 }
 
 .info-down-inf:hover {
-  padding-top: 9px;
+  padding-top: 10px;
   height: 36px;
   border-radius: 9px;
   -webkit-box-shadow: 1px 1px 3px 2px #ffffff;
@@ -316,7 +316,7 @@ p.price-list:nth-child(2n) {
 
 .model_select-dsn {
   color: #f0162b;
-  padding-top: 10px;
+  padding-top: 12px;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #f0162b;
