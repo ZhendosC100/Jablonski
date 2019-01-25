@@ -74,7 +74,8 @@ body {
 .lng_opt-rules,
 .lng_opt-comments,
 .lng_opt-promo_start,
-#promo {
+#promo,
+.slide_comments {
   display: none;
 }
 
@@ -507,9 +508,42 @@ p.price-list:nth-child(2n) {
   z-index: 1;
 }
 
+.iphone_gif {
+  width: 167px;
+  height: 310px;
+}
+
+.slide_box {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+
+.social_box {
+  padding-top: 80px;
+  margin-left: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.soc {
+  height: 50px;
+  width: 50px;
+  margin: 2%;
+}
+
 .left_arrow {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 7%;
   opacity: 0.3;
   z-index: 2;
@@ -517,7 +551,7 @@ p.price-list:nth-child(2n) {
 
 .right_arrow {
   position: absolute;
-  top: 50%;
+  top: 47%;
   right: 7%;
   opacity: 0.3;
   z-index: 2;
