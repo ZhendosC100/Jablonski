@@ -515,6 +515,11 @@ p.price-list:nth-child(2n) {
   height: 310px;
 }
 
+.iphone_gif-right {
+  width: 230px;
+  height: 310px;
+}
+
 .slide_box {
   font-weight: 700;
   text-transform: uppercase;
