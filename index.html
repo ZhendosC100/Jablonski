@@ -29,7 +29,11 @@
 </head>
 
 <body>
-    <div class="h_box">
+    <a class="move_up" href="#up" target="_blank">
+        <img class="arrow_up" src="./img/arrow_up.png" alt="arrow_up">
+    </a>
+    
+    <div id="up" class="h_box">
         <div class="logo">
             <img src="./img/logo_head.png" alt="jablonski">
         </div>
@@ -65,27 +69,27 @@
                 </div>
             </div>
             <div class="line"></div>
-            <div class="info-down">
+            <nav class="info-down">
                 <div class="lng_opt-inf_dwn active">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg">
-                                <a href="#price" class="info-down-inf-first_pos">
+                                <a id="repair_link" href="#price" class="info-down-inf-first_pos repair_link">
                                     Naprawa iPhona
                                 </a>
                             </div>
                             <div class="col-lg">
-                                <a href="#promo_start" class="info-down-inf">
+                                <a id="promo_link" href="#promo_start" class="info-down-inf promo_link">
                                     Promocji
                                 </a>
                             </div>
                             <div class="col-lg">
-                                <a href="#feedback" class="info-down-inf">
+                                <a id="feedback_link" href="#feedback" class="info-down-inf feedback_link">
                                     Opinia
                                 </a>
                             </div>
-                            <div class="col-lg">
-                                <a href="#" class="info-down-inf">
+                            <div id="about_link" class="col-lg">
+                                <a href="#about" class="info-down-inf about_link">
                                     O nas
                                 </a>
                             </div>
@@ -101,22 +105,22 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-sm">
-                                <a href="#price" class="info-down-inf-first_pos">
+                                <a id="repair_link1" href="#price" class="info-down-inf-first_pos repair_link">
                                     Repair<br>iPhone
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#promo_start" class="info-down-inf">
+                                <a id="promo_link1" href="#promo_start" class="info-down-inf promo_link">
                                     Promotions
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#feedback" class="info-down-inf">
+                                <a id="feedback_link1" href="#feedback" class="info-down-inf feedback_link">
                                     Comments
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#" class="info-down-inf">
+                                <a id="about_link1" href="#about" class="info-down-inf about_link">
                                     About us
                                 </a>
                             </div>
@@ -132,22 +136,22 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-sm">
-                                <a href="#price" class="info-down-inf-first_pos">
+                                <a id="repair_link2" href="#price" class="info-down-inf-first_pos repair_link">
                                     Ремонт iPhone
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#promo_start" class="info-down-inf">
+                                <a id="promo_link2" href="#promo_start" class="info-down-inf promo_link">
                                     Акции
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#feedback" class="info-down-inf">
+                                <a id="feedback_link2" href="#feedback" class="info-down-inf feedback_link">
                                     Отзывы
                                 </a>
                             </div>
                             <div class="col-sm">
-                                <a href="#" class="info-down-inf">
+                                <a id="about_link2" href="#about" class="info-down-inf about_link">
                                     О нас
                                 </a>
                             </div>
@@ -171,7 +175,7 @@
                     <p>+48(29)6423829</p>
                     <p class="call">Перезвонить</p>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
     <div class="h_img_box">
@@ -525,7 +529,7 @@
             <div class="dots"></div>
         </div>
     </div>
-    <div class="about_us">
+    <div id="about" class="about_us">
         <img class="about" src="img/about_us.png" alt="jalonski">
         <div class="lng_opt-about_us active">
             <h2 class="title_about">Jabłońśki - to</h2>
