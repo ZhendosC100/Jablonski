@@ -75,7 +75,9 @@ body {
 .lng_opt-comments,
 .lng_opt-promo_start,
 #promo,
-.slide_comments {
+.slide_comments,
+.lng_opt-slide,
+.lng_opt-two_slide {
   display: none;
 }
 
