@@ -187,7 +187,7 @@
                 Apple
             </p>
             <div class="button">
-               <span class="button-span">Proszę o kontakt</span> 
+               Proszę o kontakt 
             </div>
         </div>
         <div class="lng_opt-img_text">
@@ -197,7 +197,7 @@
                 Apple
             </p>
             <div class="button">
-               <span class="button-span">Call</span> 
+                Call 
             </div>
         </div>
         <div class="lng_opt-img_text">
@@ -207,7 +207,7 @@
                 Apple
             </p>
             <div class="button">
-               <span class="button-span">Перезвонить</span> 
+               Перезвонить 
             </div>
         </div>
         <img class="dmg_iphone" src="img/iphone_damaged.png" alt="iphone_damaged">
@@ -547,9 +547,23 @@
         </div>
     </div>
 
+    <div class="substrate"></div>
     <!-- Modal window of game_box -->
     <aside id="popup_game">
 
+    </aside>
+    <!-- Modal window -->
+    <aside id="popup_modal" class="popup_modal">
+        <img class="modal_backgrnd" src="./img/modal_background.png" alt="logo">
+        <img class="close" src="./img/close.png" alt="close">
+        <div class="lng_opt-popup_form">
+            <p class="form_text">Prosimy wypęnić dane <br> i wyśłać do nas</p>
+            <form id="modal_form" class="form" action="#">
+                <input class="name" name="user_name" required type="text" placeholder="Imię i Nazwisko">
+                <input class="number" name="user_number" required type="text" placeholder="Numer telefonu">
+                <button class="modal_submit" name="submit" type="submit">Wyśłać</button>
+            </form>
+        </div>
     </aside>
 
     <script src="public/bundle.js"></script>

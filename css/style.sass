@@ -114,7 +114,8 @@ body
 #promo,
 .slide_comments,
 .lng_opt-slide,
-.lng_opt-two_slide
+.lng_opt-two_slide,
+.popup_modal
     display: none
 
 .lng_opt-inf_dwn
@@ -413,7 +414,8 @@ p.price-list:nth-child(2n)
 
 .game_button,
 .button_start,
-.cancel_button
+.cancel_button,
+.modal_submit
     @include buttons
 
 .button_start
@@ -535,6 +537,7 @@ a
     position: absolute
     top: -247px
     left: 0
+    z-index: -1
 
 .lng_opt-about_us
     width: 30%
@@ -557,4 +560,78 @@ a
     @include buttons
 
 .button_feedback:hover
+    @include buttons_hover
+
+// ## Modal ##
+.popup_modal
+    background-color: #161718
+    position: fixed
+    left: 36%
+    top: 21%
+    width: 400px
+    height: 400px
+    border: 1px solid #ffffff
+    border-radius: 12px
+    z-index: 9
+
+.form
+    box-sizing: border-box
+    margin: 0 auto
+    margin-top: 30px
+    width: 70%
+
+.name, .number 
+    background-image: linear-gradient(#cc0000 13%, #ff0000 87%)
+    border: none
+    border-radius: 12px
+    box-shadow: 0 0 1px 2px #ffffff
+    color: white
+    font-size: 16px
+    padding-left: 10px
+    margin-top: 5px
+    height: 40px
+    width: 100%
+
+.modal_submit
+    border: none
+    color: white
+    width: 150px
+
+.name::placeholder, .number::placeholder
+    text-align: center
+    color: white
+
+.close
+    position: absolute
+    right: 7px
+    top: 7px
+    width: 40px
+    height: 40px
+
+.close:hover
+    @include crsr
+
+
+.modal_backgrnd
+    height: 400px
+    width: 400px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+
+.form_text
+    text-align: center
+    font-family: "GothaBol"
+    font-size: 24px
+    font-weight: 800
+    text-transform: uppercase
+    margin-top: 50px
+
+.modal_submit
+    @include buttons
+    padding-top: 4px
+    margin: 9% 0 0 20%
+
+.modal_submit:hover
     @include buttons_hover
