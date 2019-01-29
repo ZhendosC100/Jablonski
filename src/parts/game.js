@@ -2,6 +2,7 @@ export default function game() {
     let body_game = document.querySelector('body'),
         cover_tree = document.querySelector('.cover_tree'),
         promo = document.getElementById('promo'),
+        promo_game = document.querySelector('.game'),
         promo_start = document.getElementById('promo_start');
 
     body_game.addEventListener('click', (e)=> {
@@ -9,6 +10,7 @@ export default function game() {
         if(target && target.classList.contains('button_start')) {
             promo_start.style.display = 'none';
             promo.style.display = 'flex';
+            promo_game.classList.add('active_game');
         }
         
         if(target && target.classList.contains('cancel_button')){
