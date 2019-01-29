@@ -115,7 +115,8 @@ body {
 .slide_comments,
 .lng_opt-slide,
 .lng_opt-two_slide,
-.popup_modal {
+.popup_modal,
+.lng_opt-popup_form {
   display: none;
 }
 

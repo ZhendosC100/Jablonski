@@ -12,6 +12,7 @@ export default function language() {
         feedback_box = document.querySelectorAll('.lng_opt-comments'),
         slide_box = document.querySelectorAll('.lng_opt-slide'),
         slide_boxTwo = document.querySelectorAll('.lng_opt-two_slide'),
+        popup_form = document.querySelectorAll('.lng_opt-popup_form'),
         s = 0;
 
     let langNonActive = (b, name_box) =>{
@@ -41,6 +42,7 @@ export default function language() {
         langNonActive(0, promo_box);
         langNonActive(0, slide_box);
         langNonActive(0, slide_boxTwo);
+        langNonActive(0, popup_form);
 
         langActive(s, lang_box);
         langActive(s, open_box);
@@ -53,6 +55,7 @@ export default function language() {
         langActive(s, promo_box);
         langActive(s, slide_box);
         langActive(s, slide_boxTwo);
+        langActive(s, popup_form);
 
     });
     console.log(s);   
