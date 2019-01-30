@@ -45,6 +45,12 @@ $r_color: #da182e
   100%
     opacity: 1
 
+@keyframes animated_substrate
+  0%
+    opacity: 0
+  100%
+    opacity: 0.8
+
 @keyframes game_box_active
     0%
         height: 390px
@@ -66,6 +72,10 @@ body
     background: #161718
     color: #ffffff
     width: 100%
+
+.stop-scrolling
+  height: 100%
+  overflow: hidden
 
 .move_up
     position: fixed
@@ -587,7 +597,7 @@ a
 .popup_modal
     background-color: #161718
     position: fixed
-    left: 36%
+    left: 39%
     top: 24%
     width: 400px
     height: 400px
@@ -656,3 +666,15 @@ a
 
 .modal_submit:hover
     @include buttons_hover
+
+.substrate_active
+    animation-name: animated_substrate
+    animation-duration: 2.5s
+    background-color: #161718
+    opacity: 0.8
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 6
