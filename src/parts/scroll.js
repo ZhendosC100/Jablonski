@@ -28,7 +28,7 @@ scrollBox(repair_link, 30);
 scrollBox(promo_link, 80);
 scrollBox(feedback_link, 80);
 scrollBox(about_link, -60);
-scrollBox(move_up, 0);
+scrollBox(move_up, 8);
 
 
 //   ancors.forEach( function(item) {

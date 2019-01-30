@@ -190,7 +190,7 @@ body {
 
 #select:hover {
   cursor: pointer;
-  border: none;
+  border-bottom: 1px dotted #161718;
 }
 
 option {
