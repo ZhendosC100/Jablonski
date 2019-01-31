@@ -1,18 +1,19 @@
 export default function language() {
 
     let selectLang = document.getElementById('select'),
-        lang_box = document.querySelectorAll('.lng_opt'),
-        open_box = document.querySelectorAll('.lng_opt-opn'),
-        down_inf_box = document.querySelectorAll('.lng_opt-inf_dwn'),
-        call_box = document.querySelectorAll('.lng_opt-call'),
-        repair_box = document.querySelectorAll('.lng_opt-img_text'),
-        price_box = document.querySelectorAll('.lng_opt-price'),
-        rules_box = document.querySelectorAll('.lng_opt-rules'),
-        promo_box = document.querySelectorAll('.lng_opt-promo_start'),
-        feedback_box = document.querySelectorAll('.lng_opt-comments'),
-        slide_box = document.querySelectorAll('.lng_opt-slide'),
-        slide_boxTwo = document.querySelectorAll('.lng_opt-two_slide'),
-        popup_form = document.querySelectorAll('.lng_opt-popup_form'),
+        langBox = document.querySelectorAll('.lng_opt'),
+        openBox = document.querySelectorAll('.lng_opt-opn'),
+        downInfBox = document.querySelectorAll('.lng_opt-inf_dwn'),
+        callBox = document.querySelectorAll('.lng_opt-call'),
+        repairBox = document.querySelectorAll('.lng_opt-img_text'),
+        priceBox = document.querySelectorAll('.lng_opt-price'),
+        rulesBox = document.querySelectorAll('.lng_opt-rules'),
+        promoBox = document.querySelectorAll('.lng_opt-promo_start'),
+        feedbackBox = document.querySelectorAll('.lng_opt-comments'),
+        slideBox = document.querySelectorAll('.lng_opt-slide'),
+        slideBoxTwo = document.querySelectorAll('.lng_opt-two_slide'),
+        popupForm = document.querySelectorAll('.lng_opt-popup_form'),
+        aboutBox = document.querySelectorAll('.lng_opt-about_us'),
         s = 0;
 
     let langNonActive = (b, name_box) =>{
@@ -31,31 +32,33 @@ export default function language() {
         s= selectLang.options[selectLang.selectedIndex].value;
         console.log(s);
         
-        langNonActive(0, lang_box);
-        langNonActive(0, open_box);
-        langNonActive(0, down_inf_box);
-        langNonActive(0, call_box);
-        langNonActive(0, repair_box);
-        langNonActive(0, price_box);
-        langNonActive(0, rules_box);
-        langNonActive(0, feedback_box);
-        langNonActive(0, promo_box);
-        langNonActive(0, slide_box);
-        langNonActive(0, slide_boxTwo);
-        langNonActive(0, popup_form);
+        langNonActive(0, langBox);
+        langNonActive(0, openBox);
+        langNonActive(0, downInfBox);
+        langNonActive(0, callBox);
+        langNonActive(0, repairBox);
+        langNonActive(0, priceBox);
+        langNonActive(0, rulesBox);
+        langNonActive(0, feedbackBox);
+        langNonActive(0, promoBox);
+        langNonActive(0, slideBox);
+        langNonActive(0, slideBoxTwo);
+        langNonActive(0, popupForm);
+        langNonActive(0, aboutBox);
 
-        langActive(s, lang_box);
-        langActive(s, open_box);
-        langActive(s, down_inf_box);
-        langActive(s, call_box);
-        langActive(s, repair_box);
-        langActive(s, price_box);
-        langActive(s, rules_box);
-        langActive(s, feedback_box);
-        langActive(s, promo_box);
-        langActive(s, slide_box);
-        langActive(s, slide_boxTwo);
-        langActive(s, popup_form);
+        langActive(s, langBox);
+        langActive(s, openBox);
+        langActive(s, downInfBox);
+        langActive(s, callBox);
+        langActive(s, repairBox);
+        langActive(s, priceBox);
+        langActive(s, rulesBox);
+        langActive(s, feedbackBox);
+        langActive(s, promoBox);
+        langActive(s, slideBox);
+        langActive(s, slideBoxTwo);
+        langActive(s, popupForm);
+        langActive(s, aboutBox);
 
     });
     console.log(s);   

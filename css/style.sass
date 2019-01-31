@@ -9,7 +9,7 @@ $r_color: #da182e
         cursor: pointer
 
 @mixin menu_hover
-        height: 36px
+        height: 44px
         box-shadow: 1px 1px 3px 2px #ffffff
         color: $r_color
         @include crsr
@@ -31,8 +31,8 @@ $r_color: #da182e
         width: 176px
         padding-top: 14px
         text-align: center
-        font-size: 14px
-        font-weight: 500
+        font-size: 16px
+        font-weight: 700
 
 @mixin buttons_hover 
         @include crsr
@@ -133,7 +133,8 @@ body
 .lng_opt-slide,
 .lng_opt-two_slide,
 .popup_modal,
-.lng_opt-popup_form
+.lng_opt-popup_form,
+.lng_opt-about_us
     display: none
 
 .lng_opt-inf_dwn
@@ -148,8 +149,8 @@ body
     @include flexable
 
 .info-up
-    font-size: 13px
-    font-weight: 400
+    font-size: 16px
+    font-weight: 600
     line-height: 30px
     margin: 36px 0 25px 0
 
@@ -168,6 +169,8 @@ body
 
 #select
     border: none
+    font-size: 16px
+    font-weight: 600
     margin: auto 0
     margin-left: 25px 
     height: 20px
@@ -188,8 +191,8 @@ option
 
 .info-down
     margin: 25px 0 36px 0
-    font-size: 16px
-    font-weight: 500
+    font-size: 18px
+    font-weight: 700
 
 .info-down-inf, .lng_opt-call
     text-align: center
@@ -200,17 +203,17 @@ option
     display: block
     text-decoration: none
     color: white
-    padding-top: 10px
-    height: 40px
+    padding-top: 11px
+    height: 44px
     font-weight: 800
     &-first_pos
         box-shadow: 1px 1px 3px 2px #161718
-        height: 40px
+        height: 44px
         border-radius: 9px
         display: block
         text-decoration: none
         color: white
-        padding-top: 1px
+        padding-top: 2px
         text-align: center
         font-weight: 800
 
@@ -228,7 +231,7 @@ option
 
 .call
     color: $r_color
-    font-size: 13px
+    font-size: 16px
     font-weight: 400
     border-bottom: 1px dotted $r_color
     padding-bottom: 1px
@@ -294,15 +297,15 @@ option
     letter-spacing: -2.39px
 
 .model
-    margin: 40px 0 105px 30px
-    font-size: 16px
-    font-weight: 400
+    margin: 4% 0 9% 5%
+    font-size: 18px
+    font-weight: 600
     letter-spacing: -0.74px
 
 .price-list
     margin: 0
     padding: 15px 0 0 15px
-    width: 502px
+    width: 50%
     height: 47px
     border-radius: 1px
 
@@ -313,7 +316,7 @@ p.price-list:nth-child(2n)
     color: black
     position: absolute
     top: 162px
-    left: 400px
+    left: 30%
     width: 64%
     z-index: 2
 
@@ -348,18 +351,18 @@ p.price-list:nth-child(2n)
 
 .img_phone
     position: absolute
-    right: -81px
+    left: 42%
     top: 30px
     
 .text_price
     position: absolute
-    top: 21px
-    left: 220px
+    top: 32px
+    left: 24%
 
 .text_price-server
     margin: 0
-    margin-left: -75%
-    padding-top: 12px
+    // margin-left: -75%
+    //padding-top: 12px
     text-align: center
     height: 47px
 
