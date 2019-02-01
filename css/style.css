@@ -145,7 +145,7 @@ body {
 }
 
 .lng_opt-inf_dwn {
-  width: 70%;
+  width: 78%;
 }
 
 .active {
@@ -394,6 +394,10 @@ p.price-list:nth-child(2n) {
 
 .price_info div {
   text-align: center;
+}
+
+.left-pos {
+  margin-left: 4%;
 }
 
 .model_select-dsn {
@@ -738,7 +742,7 @@ a {
 
 .lng_opt-about_us {
   width: 30%;
-  margin: 11% 13% 0 0;
+  margin: 11% 13% 9% 0;
 }
 
 .title_about {
@@ -783,7 +787,7 @@ a {
 .popup_modal {
   background-color: #161718;
   position: fixed;
-  left: 39%;
+  left: 35%;
   top: 24%;
   width: 400px;
   height: 400px;
@@ -925,12 +929,18 @@ a {
 }
 
 @media (max-width: 1199px) {
+  .popup_modal {
+    left: 33%;
+  }
   .info-up {
     font-size: 13px;
     font-weight: 500;
   }
   #select {
     font-size: 13px;
+  }
+  .lng_opt-inf_dwn {
+    width: 78%;
   }
   .info-down {
     font-size: 16px;
@@ -939,11 +949,11 @@ a {
   .info-down-inf {
     padding-top: 10px;
     height: 40px;
-    width: 80px;
+    width: auto;
   }
   .info-down-inf-first_pos {
     height: 40px;
-    width: 80px;
+    width: auto;
     padding-top: 1px;
   }
   .info-down-inf:hover {
@@ -953,7 +963,7 @@ a {
     color: #da182e;
     cursor: pointer;
     height: 40px;
-    width: 80px;
+    width: auto;
     padding-top: 10px;
   }
   .info-down-inf-first_pos:hover {
@@ -963,7 +973,7 @@ a {
     color: #da182e;
     cursor: pointer;
     padding-top: 1px;
-    width: 80px;
+    width: auto;
     height: 40px;
   }
   .price_info {
@@ -987,6 +997,10 @@ a {
   .cover_tree {
     width: 501px;
     height: 675px;
+  }
+  .text_feedback {
+    overflow: auto;
+    height: 199px;
   }
   .dots_box {
     width: 6%;
@@ -1018,12 +1032,18 @@ a {
     left: 31%;
   }
   .info-down-inf {
-    padding-top: 10px;
     height: 30px;
+    padding-top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 80px;
   }
   .info-down-inf-first_pos {
     height: 30px;
     padding-top: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 80px;
   }
   .info-down-inf:hover {
     height: 44px;
@@ -1032,7 +1052,8 @@ a {
     color: #da182e;
     cursor: pointer;
     height: 30px;
-    padding-top: 10px;
+    padding-top: 8px;
+    width: 80px;
   }
   .info-down-inf-first_pos:hover {
     height: 44px;
@@ -1042,6 +1063,7 @@ a {
     cursor: pointer;
     padding-top: 1px;
     height: 30px;
+    width: 80px;
   }
   .about-link {
     margin: 2% 10% 2% 16%;
@@ -1064,6 +1086,85 @@ a {
     height: 30px;
     margin-bottom: 2px;
     font-size: 12px;
+  }
+  .model {
+    margin: 4% 0 9% 4%;
+  }
+  .rus {
+    margin: 4% 0 9% 1%;
+  }
+  .price-list {
+    padding: 11px 0 0 15px;
+    height: 39px;
+    font-size: 14px;
+  }
+  .img_phone {
+    width: 432px;
+    top: 74px;
+  }
+  .text_price-server {
+    height: 39px;
+  }
+  .tree {
+    width: 400px;
+    margin-left: -1%;
+  }
+  .random_one {
+    top: 98px;
+    left: 167px;
+  }
+  .random_two {
+    top: 219px;
+    left: 65px;
+  }
+  .random_three {
+    top: 237px;
+    left: 267px;
+  }
+  .cover_tree {
+    width: 401px;
+    height: 550px;
+    margin-left: -1%;
+  }
+  .rules_text {
+    width: 100%;
+    height: 183px;
+  }
+  .arrow_up {
+    height: 50px;
+    width: 50px;
+  }
+  .move_up {
+    right: 0;
+    bottom: 0;
+  }
+  .terminator {
+    width: 190px;
+  }
+  .text_feedback {
+    overflow: auto;
+    height: 165px;
+    font-size: 14px;
+  }
+  .iphone_gif {
+    width: 131px;
+    height: 268px;
+  }
+  .iphone_gif-right {
+    width: 179px;
+    height: 268px;
+  }
+  .social_box {
+    padding-top: 70px;
+    margin-left: 7%;
+  }
+  .about {
+    width: 492px;
+    top: -180px;
+  }
+  .lng_opt-about_us {
+    width: 39%;
+    margin: 9% 6% 5% 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
