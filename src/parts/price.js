@@ -35,15 +35,24 @@ export default function price() {
             }
         }
     }
+    for(let i = 0; i < model.length; i++){
 
-    body.addEventListener('click', (event) => {
-        let target = event.target;
-        //console.log(target);
-    
-        if(target && target.classList.contains('model_select-dsn')) {
+        model[i].addEventListener('click', (event) => {
+            let target = event.target;
+            //console.log(target);
+        
             sortModel(model, target);
-        }
-    });
+            
+        });
+    }
+    // body.addEventListener('click', (event) => {
+    //     let target = event.target;
+    //     //console.log(target);
+    
+    //     if(target && target.classList.contains('model_select-dsn')) {
+    //         sortModel(model, target);
+    //     }
+    // });
 
         } else {
             console.log('oops');
@@ -77,15 +86,27 @@ function sortTab(tabName, target) {
     }
 }
 
-body.addEventListener('click', (event) => {
-    let target = event.target;
-    //console.log(target);
+for(let i = 0; i < model.length; i++){
 
-    if(target && target.classList.contains('model_select-dsn')) {
-        sortTab(model, target);
-        console.log('ok');
-    }
-});
+    model[i].addEventListener('click', (event) => {
+        let target = event.target;
+        //console.log(target);
+    
+            sortTab(model, target);
+            console.log('ok');
+    });
+
+}
+
+// body.addEventListener('click', (event) => {
+//     let target = event.target;
+//     //console.log(target);
+
+//     if(target && target.classList.contains('model_select-dsn')) {
+//         sortTab(model, target);
+//         console.log('ok');
+//     }
+// });
 
 //model[0].classList.add('active_model');
 console.log('module price OK');
