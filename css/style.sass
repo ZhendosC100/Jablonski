@@ -93,16 +93,11 @@ body
 
 .header
     width: 70%
+    margin-left: 4%
 
 .h_box
     display: flex
-    justify-content: space-between
-
-/*.social
-    background: #da182e
-    border-radius: 13px
-    width: 80px
-    height: 30px*/
+    justify-content: flex-start
 
 .ss
     display: block
@@ -134,8 +129,14 @@ body
 .lng_opt-two_slide,
 .popup_modal,
 .lng_opt-popup_form,
-.lng_opt-about_us
+.lng_opt-about_us,
+.menu_invisible,
+.lng_opt-hidemen
     display: none
+
+.box_menu
+    width: 100%
+    text-align: center
 
 .lng_opt-inf_dwn
     width: 78%
@@ -194,9 +195,37 @@ option
     font-size: 18px
     font-weight: 700
 
-.info-down-inf, .lng_opt-call
+.info-down-inf .lng_opt-call
     text-align: center
-    margin-left: -12%
+    margin-left: -38%
+
+.lng_opt-call
+    text-align: center
+    margin-left: -38%
+
+.menu_invisible
+
+.lng_opt-hidemen
+    box-shadow: 1px 1px 3px 2px #161718
+    border-radius: 9px
+    display: none
+    text-decoration: none
+    color: white
+    font-weight: 800
+    height: 30px
+    padding-top: 8px
+    padding-left: 17px
+    width: 80px
+
+.lng_opt-hidemen:hover
+    @include menu_hover
+    @include animated
+    height: 30px
+    padding-top: 8px
+    width: 
+    
+.active-hidemen
+    display: block 
 
 .info-down-inf
     box-shadow: 1px 1px 3px 2px #161718
@@ -692,6 +721,8 @@ a
 // --------------### MEDIA max-width: 1400px ###-------------------
 
 @media (max-width: 1400px)
+    .header
+        margin-left: 1%
     .dmg_iphone
         width: 789px
         top: -60px
@@ -742,9 +773,17 @@ a
         font-size: 13px
     .lng_opt-inf_dwn
         width: 78%
+    .box_menu
+        font-size: 14px
+    .lng_opt-call
+        margin-left: -42%
+        font-size: 14px
+    .call
+        font-size: 14px
     .info-down
         font-size: 16px
         font-weight: 300
+        margin-left: -2%
     .info-down-inf
         padding-top: 10px
         height: 40px
@@ -801,8 +840,8 @@ a
         position: relative
     .open
         position: absolute
-        top: 0
-        left: 0
+        top: 25%
+        left: 51%
     .logo-img
         width: 460px
     .logo
@@ -812,22 +851,43 @@ a
     .info-down
         font-size: 12px
         font-weight: 400
+        position: relative
+    .lng_opt-inf_dwn
+        width: 14%
+        position: absolute
+        left: 8%
+        top: 79px
+        z-index: 3
     .call
         font-size: 10px
+    .lng_opt-call
+        margin-left: -71%
+        z-index: 4
     .popup_modal
         left: 31%
+    .lng_opt-hidemen
+        padding-left: 22px
+        margin-left: 6%
+    .active_box_menu
+        display: block
+    .hide_box_menu
+        display: none
     .info-down-inf
         height: 30px
         padding-top: 8px
         font-size: 13px
         font-weight: bold
         width: 80px
+        margin: 0
+        margin-bottom: 9%
         &-first_pos
             height: 30px
             padding-top: 1px
             font-size: 13px
             font-weight: bold
             width: 80px
+            margin: 0
+            margin-bottom: 9%
     .info-down-inf:hover
         @include menu_hover
         height: 30px
@@ -838,18 +898,28 @@ a
         padding-top: 1px
         height: 30px
         width: 80px
-    .about-link
-        margin: 2% 10% 2% 16%
-    #about_link:hover
-        margin: 2% 10% 2% 16%
+    // .about-link
+    //     margin: 2% 10% 2% 16%
+    // #about_link:hover
+    //     margin: 2% 10% 2% 16%
     .dmg_iphone
         width: 692px
-        left: -8%
-        top: -44px
+        left: -2%
+        top: -96px
     .repair
-        margin-top: 9px
-        font-size: 44px
+        margin-top: -1%
+        font-size: 38px
         line-height: 60px
+        margin-left: 55%
+    .button_pos
+        margin-left: 55%
+    .button
+        height: 36px
+        width: 140px
+        padding-top: 10px
+        font-size: 13px
+    .price_box
+        margin-top: 199px
     .model_select-dsn
         padding-top: 9px
         height: 30px
