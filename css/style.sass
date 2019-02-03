@@ -229,6 +229,7 @@ option
 .call_link
     text-decoration: none
     color: white
+    padding-top: 11px
 
 .call
     color: $r_color
@@ -248,13 +249,10 @@ option
 
 .dmg_iphone
     display: block
-    // width: 85px
-    // height: 159px
-    width: 789px
-    height: 700px
+    width: 807px
     position: absolute
-    top: 45px
-    left: 1%
+    top: -54px
+    left: 3%
     z-index: -1
 
 .lng_opt-img_text
@@ -263,7 +261,7 @@ option
         
 .repair
     margin-left: 52%
-    margin-top: -80px
+    margin-top: -50px
     font-family: "GothaBol"
     font-size: 56px
     text-transform: uppercase
@@ -298,17 +296,18 @@ option
     letter-spacing: -2.39px
 
 .model
-    margin: 4% 0 9% 5%
-    font-size: 18px
+    margin: 3.5% 0 9% 5%
+    font-size: 23px
     font-weight: 600
     letter-spacing: -0.74px
 
 .price-list
     margin: 0
     padding: 15px 0 0 15px
-    width: 50%
-    height: 47px
+    width: 56%
+    height: 59px
     border-radius: 1px
+    font-size: 21px
 
 p.price-list:nth-child(2n)
     background-color: #f5f5f5
@@ -356,19 +355,19 @@ p.price-list:nth-child(2n)
 .img_phone
     position: absolute
     left: 42%
-    top: 30px
-    
+    top: 79px
+    width: 670px
+
 .text_price
     position: absolute
-    top: 32px
-    left: 24%
-
+    top: 57px
+    left: 30%
+    
 .text_price-server
     margin: 0
-    // margin-left: -75%
-    //padding-top: 12px
     text-align: center
-    height: 47px
+    height: 60px
+    font-size: 21px
 
 //##Game Box##
 #promo_start
@@ -538,7 +537,7 @@ a
     font-size: 52px
     font-weight: 700
     text-transform: uppercase
-    margin: -1% 0 4% 7%
+    margin: -1.6% 0 4% 7%
 
 
 .text_feedback
@@ -591,6 +590,8 @@ a
 .about_call
     display: flex
     justify-content: space-around
+    padding-top: 61px
+    margin-left: -9%
     width: 100%
 
 .about_number
@@ -606,7 +607,7 @@ a
 .popup_modal
     background-color: #161718
     position: fixed
-    left: 35%
+    left: 36%
     top: 24%
     width: 400px
     height: 400px
@@ -688,17 +689,46 @@ a
     height: 100%
     z-index: 6
 
+// --------------### MEDIA max-width: 1400px ###-------------------
+
 @media (max-width: 1400px)
+    .dmg_iphone
+        width: 789px
+        top: -60px
+        left: 2%
+    .repair
+        margin-top: -30px
     .price_info
-        top: 131px
+        top: 142px
         left: 30%
-    .text_price
-        top: 39px
-        left: 23%
     .img_phone
-        width: 522px
-        left: 34%
+        width: 560px
+        left: 37%
         top: 68px
+    .model
+        margin: 4% 0 9% 0%
+        font-size: 18px   
+    .text_price  
+        top: 30px
+        left: 24%
+    .text_price-server
+        font-size: 16px
+        height: 47px
+    .price-list
+        width: 50%
+        height: 47px
+        font-size: 16px
+    .title_feedback
+        margin: -0.8% 0 4% 7%
+    .text_feedback
+        overflow: auto
+        height: 190px
+    .about_call
+        margin-left: -5%
+    .lng_opt-about_us
+        margin: 17% 10% 9% 0
+    .popup_modal
+        left: 35%
 
 // --------------### MEDIA max-width: 1199px ###-------------------
 
@@ -733,6 +763,8 @@ a
         padding-top: 1px
         width: auto//80px
         height: 40px
+    .model
+        margin: 3.1% 0% 10.1% 0%
     .price_info
         top: 118px
     .text_price
@@ -741,7 +773,7 @@ a
     .img_phone
         left: 34%
         width: 500px
-        top: 99px
+        top: 67px
     .lng_opt-rules
         margin-left: 3%
     .buttons
@@ -757,10 +789,20 @@ a
     .about
         width: 584px
         top: -210px
+    .lng_opt-about_us
+        margin: 10% 10% 9% 0
+    .about_call
+        margin-left: -1%
 
 // --------------### MEDIA max-width: 991px ###-------------------
 
 @media (max-width: 991px)
+    .info_up
+        position: relative
+    .open
+        position: absolute
+        top: 0
+        left: 0
     .logo-img
         width: 460px
     .logo

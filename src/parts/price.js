@@ -20,31 +20,31 @@ export default function price() {
             // y=data.model[x];
             // price[1].innerHTML = y[1];
 
-    function addDataServer (b) {
-        for (let i = 0; i<price.length; i++){
-            x=b;
-            y=data.model[x];    
-            price[i].innerHTML = y[i];   
-        }
-    }
-    
-    function sortModel(modelName, target) {
-        for (let i = 0; i < modelName.length; i++){
-            if(target == modelName[i]){
-                addDataServer(i);
+            function addDataServer (b) {
+                for (let i = 0; i<price.length; i++){
+                    x=b;
+                    y=data.model[x];    
+                    price[i].innerHTML = y[i];   
+                }
             }
-        }
-    }
-    for(let i = 0; i < model.length; i++){
-
-        model[i].addEventListener('click', (event) => {
-            let target = event.target;
-            //console.log(target);
-        
-            sortModel(model, target);
             
-        });
-    }
+            function sortModel(modelName, target) {
+                for (let i = 0; i < modelName.length; i++){
+                    if(target == modelName[i]){
+                        addDataServer(i);
+                    }
+                }
+            }
+            for(let i = 0; i < model.length; i++){
+
+                model[i].addEventListener('click', (event) => {
+                    let target = event.target;
+                    //console.log(target);
+                
+                    sortModel(model, target);
+                    
+                });
+            }
     // body.addEventListener('click', (event) => {
     //     let target = event.target;
     //     //console.log(target);
