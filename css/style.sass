@@ -59,6 +59,14 @@ $r_color: #da182e
         height: 715px
         opacity: 1
 
+@keyframes game_box_active_small
+    0%
+        height: 340px
+        opacity: 0
+    100%
+        height: 465px
+        opacity: 1
+
 @mixin animated
         animation-name: activated
         animation-duration: 1.6s
@@ -205,24 +213,24 @@ option
 
 .menu_invisible
 
-.lng_opt-hidemen
-    box-shadow: 1px 1px 3px 2px #161718
-    border-radius: 9px
-    display: none
-    text-decoration: none
-    color: white
-    font-weight: 800
-    height: 30px
-    padding-top: 8px
-    padding-left: 17px
-    width: 80px
+// .lng_opt-hidemen
+//     box-shadow: 1px 1px 3px 2px #161718
+//     border-radius: 9px
+//     display: none
+//     text-decoration: none
+//     color: white
+//     font-weight: 800
+//     height: 30px
+//     padding-top: 8px
+//     padding-left: 17px
+//     width: 80px
 
-.lng_opt-hidemen:hover
-    @include menu_hover
-    @include animated
-    height: 30px
-    padding-top: 8px
-    width: 
+// .lng_opt-hidemen:hover
+//     @include menu_hover
+//     @include animated
+//     height: 30px
+//     padding-top: 8px
+//     width: 80px
     
 .active-hidemen
     display: block 
@@ -840,8 +848,10 @@ a
         position: relative
     .open
         position: absolute
-        top: 25%
+        top: 134px
         left: 51%
+    .open_ru
+        margin-left: -6%
     .logo-img
         width: 460px
     .logo
@@ -866,8 +876,30 @@ a
     .popup_modal
         left: 31%
     .lng_opt-hidemen
+        box-shadow: 1px 1px 3px 2px #161718
+        border-radius: 9px
+        display: none
+        text-decoration: none
+        color: white
+        font-weight: 800
+        height: 30px
+        padding-top: 8px
+        //padding-left: 17px
+        width: 80px
+    .lng_opt-hidemen:hover
+        @include menu_hover
+        @include animated
+        height: 30px
+        padding-top: 8px
+        width: 80px
+    .active
+        display: block 
+        animation-name: activated
+        animation-duration: 3s
+    .lng_opt-hidemen
         padding-left: 22px
         margin-left: 6%
+        margin-top: -5px
     .active_box_menu
         display: block
     .hide_box_menu
@@ -915,7 +947,10 @@ a
         margin-left: 55%
     .button_pos
         margin-left: 55%
-    .button
+    .button,
+    .button_start,
+    .game_button,
+    .cancel_button
         height: 36px
         width: 140px
         padding-top: 10px
@@ -986,3 +1021,108 @@ a
     .lng_opt-about_us
         width: 39%
         margin: 9% 6% 5% 0
+
+// --------------### MEDIA max-width: 767px ###-------------------
+
+@media (max-width: 767px)
+    .active_game
+        animation-name: game_box_active_small
+        animation-duration: 1.6s
+    .logo
+        margin: -133px 0 0 -129px
+    .logo-img
+        width: 365px
+    .header
+        margin-left: -3
+    .open
+        top: 71px
+        left: 51%
+    .open_ru
+        margin-left: -7%
+    .info-up
+        font-size: 11px
+        font-weight: 700
+        margin: 2px 0 5px 0
+    .info-down
+        display: flex
+        justify-content: space-between
+        width: 86%
+        margin-left: 5%
+        margin-top: 21px
+    .active_box_menu
+        margin-top: -2px
+    .box_menu
+        position: absolute
+        left: 0
+        right: 0
+    .lng_opt-call
+        margin-left: 0%
+        font-size: 11px
+        font-weight: 800
+    .lng_opt-inf_dwn
+        left: 1%
+        top: 71px
+    .dmg_iphone
+        width: 532px
+        left: -1%
+        top: -39px
+    .repair
+        margin-top: -63px
+        font-size: 32px
+        line-height: 45px
+        margin-left: 56%
+    .price_box
+        position: relative
+    .model_info
+        position: absolute
+        width: 20%
+        top: 10px
+        left: 66%
+    .left-pos
+        margin-left: 0
+    .price-list
+        width: 70%
+    .text_price
+        left: 42%
+    .model
+        margin: -5% 0 9% 74%
+    .model_select-dsn
+        padding-top: 9px
+        height: 30px
+        margin-bottom: -6px
+    .cena
+        font-size: 48px
+    .img_phone
+        display: none
+    #promo_start
+        margin-top: 51px
+    .game
+        margin-top: 52px
+    .rules
+        font-size: 48px
+    .rules_text
+        overflow: auto
+        font-size: 15px
+        height: 160px
+    .buttons
+        margin-left: -2%
+    .button_start
+        margin: 0 auto
+    .tree
+        width: 283px
+        margin-bottom: 57px
+    .cover_tree
+        width: 282px
+        height: 403px
+    .random_one
+        font-size: 36px
+        top: 61px
+        left: 109px
+    .random_two
+        font-size: 32px
+        top: 146px
+        left: 37px
+    .random_three
+        top: 158px
+        left: 180px
+        font-size: 32px 

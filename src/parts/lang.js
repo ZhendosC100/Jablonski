@@ -14,6 +14,7 @@ export default function language() {
         slideBoxTwo = document.querySelectorAll('.lng_opt-two_slide'),
         popupForm = document.querySelectorAll('.lng_opt-popup_form'),
         aboutBox = document.querySelectorAll('.lng_opt-about_us'),
+        menuBox = document.querySelectorAll('.lng_opt-hidemen'),
         s = 0;
 
     let langNonActive = (b, name_box) =>{
@@ -45,6 +46,7 @@ export default function language() {
         langNonActive(0, slideBoxTwo);
         langNonActive(0, popupForm);
         langNonActive(0, aboutBox);
+        langNonActive(0, menuBox);
 
         langActive(s, langBox);
         langActive(s, openBox);
@@ -59,6 +61,8 @@ export default function language() {
         langActive(s, slideBoxTwo);
         langActive(s, popupForm);
         langActive(s, aboutBox);
+        langActive(s, menuBox);
+
 
     });
     console.log(s);   
