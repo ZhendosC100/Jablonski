@@ -1255,7 +1255,8 @@ a {
   .button,
   .button_start,
   .game_button,
-  .cancel_button {
+  .cancel_button,
+  .button_feedback {
     height: 36px;
     width: 140px;
     padding-top: 10px;
@@ -1492,6 +1493,58 @@ a {
     top: 158px;
     left: 180px;
     font-size: 32px;
+  }
+  #feedback {
+    padding: 4%;
+  }
+  .title_feedback {
+    font-size: 32px;
+    margin: -0.8% 0 4% 13%;
+  }
+  .text_feedback {
+    height: 143px;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .terminator {
+    width: 142px;
+  }
+  .dots_box {
+    width: 9%;
+  }
+  .iphone_gif {
+    width: 108px;
+    height: 209px;
+  }
+  .iphone_gif-right {
+    width: 147px;
+    height: 209px;
+    margin-left: -5%;
+  }
+  .social_box {
+    padding-top: 23px;
+    margin-left: 9%;
+  }
+  .soc {
+    height: 40px;
+    width: 40px;
+  }
+  .about {
+    width: 377px;
+    top: -140px;
+  }
+  .title_about {
+    font-size: 36px;
+  }
+  .about_text {
+    font-size: 12px;
+  }
+  .about_call {
+    margin-left: 0%;
+    margin-top: -48px;
+  }
+  .call_link {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

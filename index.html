@@ -602,25 +602,25 @@
         <img class="close" src="./img/close.png" alt="close">
         <div class="lng_opt-popup_form active">
             <p class="form_text">Prosimy wypęnić dane <br> i wyśłać do nas</p>
-            <form id="modal_form" class="form" action="#">
+            <form id="modal_form" class="form" action="mailer/smart.php" method="POST">
                 <input class="name" name="user_name" required type="text" placeholder="Imię i Nazwisko">
-                <input class="number" name="user_number" required type="text" placeholder="Numer telefonu">
+                <input class="number" name="user_phone" required type="text" placeholder="Numer telefonu">
                 <button class="modal_submit" name="submit" type="submit">Wyśłać</button>
             </form>
         </div>
         <div class="lng_opt-popup_form">
             <p class="form_text">Please, fill in the fields <br> and send it to us</p>
-            <form id="modal_form" class="form" action="#">
+            <form id="modal_form_1" class="form" action="mailer/smart.php" method="POST">
                 <input class="name" name="user_name" required type="text" placeholder="Name & Surname">
-                <input class="number" name="user_number" required type="text" placeholder="Number of phone">
+                <input class="number" name="user_phone" required type="text" placeholder="Number of phone">
                 <button class="modal_submit" name="submit" type="submit">Send</button>
             </form>
         </div>
         <div class="lng_opt-popup_form">
             <p class="form_text">Пожалуйста, внесите данные <br> и вышлите нам</p>
-            <form id="modal_form" class="form" action="#">
+            <form id="modal_form_2" class="form" action="mailer/smart.php" method="POST">
                 <input class="name" name="user_name" required type="text" placeholder="Имя и Фамилия">
-                <input class="number" name="user_number" required type="text" placeholder="Номер телефона">
+                <input class="number" name="user_phone" required type="text" placeholder="Номер телефона">
                 <button class="modal_submit" name="submit" type="submit">Отправить</button>
             </form>
         </div>
