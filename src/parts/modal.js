@@ -7,6 +7,7 @@ export default function modal() {
         button = document.querySelectorAll('.button'),
         btnFeedback = document.querySelectorAll('.button_feedback'),
         formPl = document.getElementById('modal_form'),
+        formBtn = document.querySelectorAll('.modal_submit'),
         inputNumber = document.querySelectorAll('.number'),
         inputName = document.querySelectorAll('.name');
 
@@ -32,11 +33,12 @@ export default function modal() {
         item.addEventListener('click', () => {
             modal.classList.add('active');
             substrate.classList.add('substrate_active');
-            body.classList.add('stop-scrolling'); //Stop scrolling the page
+            body.classList.add('stop-scrolling'); //Stop scrolling the page//
             onlyNumber();
         });
     }
 
+    hideModal(close);
 
     function hideModal(item){
         item.addEventListener('click', () =>{
@@ -59,13 +61,13 @@ export default function modal() {
         displayModal(btnFeedback[i]);
     }
 
-    hideModal(close);
+    
 
     //--------------#Server send data#----------//
     let message = {
-        loading: 'Загрузка...',
-        success: 'Спасибо! Скоро мы с Вами свяжемся',
-        failure: 'Что-то пошло не так...'
+        loading: 'Ładowanie...',
+        success: 'Dziękuję. Proszę czekać na odpowiedź.',
+        failure: 'Coś nie tak z serverem...'
     },
         statusMessage = document.createElement('div');
         statusMessage.classList.add('status');

@@ -5,6 +5,7 @@ import modal from './parts/modal';
 import price from './parts/price';
 import game from './parts/game';
 import menu from './parts/menu';
+import info from './parts/info';
 
 window.addEventListener('DOMContentLoaded', function(){
     'use strict';
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', function(){
     price();
     game();
     menu();
+    info();
 });

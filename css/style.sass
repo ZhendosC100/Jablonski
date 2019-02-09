@@ -136,6 +136,7 @@ body
 .lng_opt-slide,
 .lng_opt-two_slide,
 .popup_modal,
+.popup_modal-time,
 .lng_opt-popup_form,
 .lng_opt-about_us,
 .menu_invisible,
@@ -276,7 +277,7 @@ option
     padding-bottom: 1px
 
 .call:hover
-    border: none
+    border-bottom: 1px dotted #161718
     @include crsr
 
 .h_img_box
@@ -641,7 +642,8 @@ a
     @include buttons_hover
 
 // ## Modal ##
-.popup_modal
+.popup_modal,
+.popup_modal-time
     background-color: #161718
     position: fixed
     left: 36%
@@ -679,14 +681,16 @@ a
     text-align: center
     color: white
 
-.close
+.close,
+.close_time
     position: absolute
     right: 15px
     top: 15px
     width: 35px
     height: 35px
 
-.close:hover
+.close:hover,
+.close_time:hover
     @include crsr
 
 
@@ -726,7 +730,19 @@ a
     height: 100%
     z-index: 6
 
-// --------------### MEDIA max-width: 1400px ###-------------------
+// --------------### Info modal ### ------------------------------//
+
+.popup_modal-time
+    text-align: center
+    line-height: 20px
+
+.time_background
+    background-color: rgba(22, 23, 24, 0.8)
+    border-radius: 12px
+    padding: 4px
+    margin-top: 30px
+
+// --------------### MEDIA max-width: 1400px ###-------------------//
 
 @media (max-width: 1400px)
     .header
@@ -766,13 +782,15 @@ a
         margin-left: -5%
     .lng_opt-about_us
         margin: 17% 10% 9% 0
-    .popup_modal
+    .popup_modal,
+    .popup_modal-time
         left: 35%
 
 // --------------### MEDIA max-width: 1199px ###-------------------
 
 @media (max-width: 1199px)
-    .popup_modal
+    .popup_modal,
+    .popup_modal-time
         left: 33%
     .info-up
         font-size: 13px
@@ -873,7 +891,8 @@ a
     .lng_opt-call
         margin-left: -71%
         z-index: 4
-    .popup_modal
+    .popup_modal,
+    .popup_modal-time
         left: 31%
     .lng_opt-hidemen
         box-shadow: 1px 1px 3px 2px #161718
@@ -1165,3 +1184,42 @@ a
         margin-top: -48px
     .call_link
         font-size: 12px
+        
+// --------------### MEDIA max-width: 575px ###-------------------
+@media (max-width: 575px)
+    .logo
+        margin: -95px 0 0 -92px
+    .logo-img
+        width: 246px
+    #select
+        font-size: 12px
+        margin-left: 37px
+    .ss
+        margin-top: 15px
+        width: 25px
+        height: 25px
+    .soc_img
+        padding: 5px 0px 0px 5px
+    .open
+        top: 40px
+        left: 45%
+        font-size: 12px
+    .info-down
+        width: 90%
+    .lng_opt-hidemen
+        margin-left: -18%
+    .lng_opt-inf_dwn
+        left: -4%
+        top: 57px
+    .dmg_iphone
+        width: 467px
+        left: -13%
+        top: -31px
+    .repair
+        margin-top: -24px
+        font-size: 29px
+        line-height: 40px
+        margin-left: 53%
+    .button_pos
+        margin-left: 53%
+        margin-top: 75px
