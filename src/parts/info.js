@@ -8,7 +8,7 @@ export default function info () {
         modalTime.classList.add('active');
         substrate.classList.add('substrate_active');
         body.classList.add('stop-scrolling');
-        setTimeout(hideModalTime, 22000);
+        setTimeout(hideModalTime, 35000);
     }
 
     function hideModalTime(){
