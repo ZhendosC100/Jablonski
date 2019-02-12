@@ -606,6 +606,7 @@
                 <input class="name" name="user_name" required type="text" placeholder="Imię i Nazwisko">
                 <input class="number" name="user_phone" required type="text" placeholder="Numer telefonu">
                 <button class="modal_submit" name="submit" type="submit">Wyśłać</button>
+                <!-- <input name="submit" type="hidden" value="wysłać"> -->
             </form>
         </div>
         <div class="lng_opt-popup_form">
@@ -613,7 +614,8 @@
             <form id="modal_form_1" class="form" action="mailer/smart.php" method="POST">
                 <input class="name" name="user_name" required type="text" placeholder="Name & Surname">
                 <input class="number" name="user_phone" required type="text" placeholder="Number of phone">
-                <button class="modal_submit" name="submit" type="submit">Send</button>
+                <button class="modal_submit" name="submit" type="button">Send</button>
+                <!-- <input name="submit" type="hidden" value="send"> -->
             </form>
         </div>
         <div class="lng_opt-popup_form">
@@ -638,7 +640,7 @@
             Wysyłka danych z formy na e-mail: <i><b>PHP/AJAX</b></i> <br>
             Responsiwność strony: <i><b>Flex-box, Bootstrap Grid</b></i>
             <p>Pozdrawiam,</p> 
-            <p>Eugeniusz Treciak (<i>Yauhen Tretsyak</i>)</p> 
+            <p>Eugeniusz Treciak (<i>Yauhen Tretsyak</i>)</p> <br>
         </div>
     </aside>
 
