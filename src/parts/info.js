@@ -5,8 +5,8 @@ export default function info () {
         substrate = document.querySelector('.substrate');
 
     function showModalTime(){
-        modalTime.classList.add('active');
-        substrate.classList.add('substrate_active');
+        // modalTime.classList.add('active');
+        // substrate.classList.add('substrate_active');
         body.classList.add('stop-scrolling');
         setTimeout(hideModalTime, 35000);
     }

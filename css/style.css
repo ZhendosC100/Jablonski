@@ -969,6 +969,12 @@ a {
   margin-top: 30px;
 }
 
+@media (max-width: 1440px) {
+  .price_info {
+    top: 146px;
+  }
+}
+
 @media (max-width: 1400px) {
   .header {
     margin-left: 1%;
@@ -1742,6 +1748,15 @@ a {
   .popup_modal,
   .popup_modal-time {
     left: 17%;
+  }
+}
+
+@media (max-width: 414px) {
+  .logo {
+    margin: -81px 0 0 -80px;
+  }
+  .logo-img {
+    width: 206px;
   }
 }
 /*# sourceMappingURL=style.css.map */
