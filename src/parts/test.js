@@ -19,9 +19,8 @@ let form = document.querySelector('.log_form'),  // zmenna od formy z HTML (clas
 
     form.addEventListener('submit', function(event) {
         
-        //отменим стандартное поведение браузера (тут при нажатии на кнопку обновляется страница )
-        event.preventDefault(); // wyłączamy standartową reakcję browsera na 'click'
-        console.log(event.target);
+        event.preventDefault(); // wyłączamy standartową reakcję browsera na 'click' na submit w formie
+        //console.log(event.target);
         //
         form.appendChild(statusMessage);
 
@@ -39,7 +38,6 @@ let form = document.querySelector('.log_form'),  // zmenna od formy z HTML (clas
         });
         let json = JSON.stringify(obj);         //robimy format danych do wysylki JSON  wysyłamy
         request.send(json);                     //robimy format danych do wysylki JSON  wysyłamy
-        request.send(formData);
 
         //napisanie message  w okience formy
         request.addEventListener('readystatechange', function(){
