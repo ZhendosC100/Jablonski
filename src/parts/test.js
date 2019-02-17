@@ -2,7 +2,7 @@
  //Form
  let message = {
     loading: 'Loading...',
-    success: 'Спасибо! Скоро мы с Вами свяжемся',
+    success: 'ok',
     failure: 'Oops...',
     clickBtn: 'Hello 😉! How are you?'
 };
