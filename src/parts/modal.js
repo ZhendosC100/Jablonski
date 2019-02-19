@@ -74,7 +74,7 @@ export default function modal() {
 
     function sendForm(elem) {
         elem.addEventListener('submit', function (event) {
-            event.preventDefault();
+            // event.preventDefault();
             elem.appendChild(statusMessage);
 
             let formData = new FormData(elem);

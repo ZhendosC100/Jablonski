@@ -1751,12 +1751,53 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 420px) {
   .logo {
     margin: -81px 0 0 -80px;
   }
   .logo-img {
     width: 206px;
+  }
+  .info-up {
+    margin: -9px 0 2px 0;
+  }
+  .open {
+    top: 26px;
+    left: 42%;
+  }
+  #select {
+    margin-left: 12px;
+  }
+  .ss {
+    margin-top: 15px;
+    width: 21px;
+    height: 21px;
+    position: relative;
+  }
+  .soc_img {
+    padding: 0px;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+  }
+  .dmg_iphone {
+    width: 463px;
+    left: -24%;
+  }
+  .repair {
+    margin-top: -15px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 58%;
+  }
+  .button_pos {
+    margin-left: 58%;
+    margin-top: 61px;
+  }
+  .price_box {
+    margin-top: 148px;
   }
 }
 /*# sourceMappingURL=style.css.map */
