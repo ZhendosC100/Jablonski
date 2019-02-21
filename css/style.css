@@ -438,7 +438,15 @@ p.price-list:nth-child(2n) {
 
 .model_select-dsn {
   color: #f0162b;
-  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #f0162b;
@@ -1293,7 +1301,6 @@ a {
     margin-top: 199px;
   }
   .model_select-dsn {
-    padding-top: 9px;
     height: 30px;
     margin-bottom: 2px;
     font-size: 12px;
@@ -1468,7 +1475,6 @@ a {
     margin: -5% 0 9% 74%;
   }
   .model_select-dsn {
-    padding-top: 9px;
     height: 30px;
     margin-bottom: -6px;
   }
@@ -1653,7 +1659,6 @@ a {
     left: 71%;
   }
   .model_select-dsn {
-    padding-top: 4px;
     height: 24px;
     margin-bottom: -7px;
   }
@@ -1752,6 +1757,18 @@ a {
 }
 
 @media (max-width: 420px) {
+  .move_up {
+    right: -30px;
+    bottom: -30px;
+  }
+  .arrow_up {
+    height: 28px;
+    width: 28px;
+  }
+  .popup_modal,
+  .popup_modal-time {
+    left: 2%;
+  }
   .logo {
     margin: -81px 0 0 -80px;
   }
@@ -1798,6 +1815,73 @@ a {
   }
   .price_box {
     margin-top: 148px;
+  }
+  .lng_opt-price {
+    padding: 16px;
+    width: 92%;
+  }
+  .cena {
+    font-size: 32px;
+  }
+  .model {
+    text-align: center;
+    font-size: 13px;
+    margin: -9% 0 10px 79%;
+  }
+  .model_info {
+    top: -61px;
+    left: 75%;
+  }
+  .model_select-dsn {
+    height: 23px;
+    margin-bottom: -4px;
+    font-size: 9px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .text_price {
+    left: 49%;
+    top: -49px;
+  }
+  .game {
+    margin-top: 14px;
+  }
+  .active_game {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  #promo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .cover_tree {
+    margin-left: 11%;
+  }
+  .tree {
+    margin-left: 11%;
+  }
+  .rules {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .lng_opt-rules {
+    text-align: justify;
+  }
+  .rules_text {
+    height: 84px;
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
