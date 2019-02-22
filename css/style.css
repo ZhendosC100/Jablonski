@@ -1912,6 +1912,11 @@ a {
 }
 
 @media (max-width: 376px) {
+  .time_background {
+    padding: 1px;
+    margin-top: 3px;
+    font-size: 14px;
+  }
   .move_up {
     bottom: -16px;
   }
@@ -1937,6 +1942,13 @@ a {
   }
   .logo-img {
     width: 170px;
+  }
+  .lang-block {
+    font-size: 9px;
+  }
+  #select {
+    font-size: 10px;
+    margin-left: 15px;
   }
   .open {
     top: 29px;
