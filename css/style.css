@@ -1944,7 +1944,11 @@ a {
     width: 170px;
   }
   .lang-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 9px;
+    width: 62%;
   }
   #select {
     font-size: 10px;
