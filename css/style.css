@@ -1784,7 +1784,7 @@ a {
   .logo-img {
     width: 206px;
     position: absolute;
-    top: 22px;
+    top: 23px;
     left: 21px;
     z-index: -1;
   }
@@ -1799,29 +1799,44 @@ a {
             justify-content: space-between;
   }
   .lng_opt {
-    margin-top: 7px;
+    margin-top: 13px;
+    margin-left: 36px;
   }
   .info-up {
     margin: -15px 0 2px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .open_ru {
+    margin-left: -1%;
+  }
+  .lng_opt-call {
+    margin-top: -41px;
+    margin-bottom: 41px;
   }
   .open {
     font-size: 10px;
     top: 20px;
     left: 40%;
+    z-index: -1;
   }
   #select {
     padding: 0;
-    left: 48%;
-    font-size: 10px;
+    font-size: 11px;
     position: absolute;
-    top: 4px;
-    left: 47%;
+    top: 11px;
+    left: 58%;
   }
   .ss {
     margin-top: 14px;
@@ -1836,6 +1851,12 @@ a {
     position: absolute;
     top: 4px;
     left: 3px;
+  }
+  .lng_opt-hidemen {
+    margin-left: 2%;
+  }
+  .lng_opt-inf_dwn {
+    left: 0%;
   }
   .dmg_iphone {
     width: 463px;
@@ -1968,12 +1989,9 @@ a {
     width: 30px;
     height: 30px;
   }
-  #select {
-    left: 46%;
-  }
   .dmg_iphone {
     width: 403px;
-    left: -24%;
+    left: -22%;
     top: -34px;
   }
   .modal_submit {
