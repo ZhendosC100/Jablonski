@@ -889,10 +889,12 @@ a {
 }
 
 .discount {
+  color: black;
   margin: 0 auto;
-  width: 15%;
+  width: 20%;
   padding: 0;
   text-align: center;
+  font-weight: 900;
 }
 
 .name::-webkit-input-placeholder,
@@ -1125,7 +1127,8 @@ a {
   }
   .popup_modal,
   .game_modal,
-  .popup_modal-time {
+  .popup_modal-time,
+  .end_game {
     left: 35%;
   }
 }
@@ -1133,7 +1136,8 @@ a {
 @media (max-width: 1199px) {
   .popup_modal,
   .game_modal,
-  .popup_modal-time {
+  .popup_modal-time,
+  .end_game {
     left: 33%;
   }
   .info-up {
@@ -1277,6 +1281,7 @@ a {
   }
   .popup_modal,
   .game_modal,
+  .end_game,
   .popup_modal-time {
     left: 31%;
   }
@@ -1844,6 +1849,7 @@ a {
   }
   .popup_modal,
   .game_modal,
+  .end_game,
   .popup_modal-time {
     left: 17%;
   }
@@ -1860,6 +1866,7 @@ a {
   }
   .popup_modal,
   .game_modal,
+  .end_game,
   .popup_modal-time {
     left: 2%;
   }
@@ -2059,6 +2066,20 @@ a {
   .move_up {
     bottom: -16px;
   }
+  .end_game {
+    height: 160px;
+    font-size: 23px;
+    width: 325px;
+    left: 7%;
+  }
+  .end_backgrnd {
+    width: 150px;
+    height: 150px;
+  }
+  .close_end {
+    right: 5px;
+    top: 5px;
+  }
   .popup_modal,
   .game_modal,
   .popup_modal-time {
@@ -2145,13 +2166,14 @@ a {
 @media (max-width: 322px) {
   .end_game {
     width: 301px;
-    height: 150px;
+    height: 160px;
+    left: 3%;
   }
   .close_end {
-    width: 15px;
-    height: 15px;
-    right: 3px;
-    top: 3px;
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    top: 6px;
   }
   .popup_modal,
   .game_modal,
