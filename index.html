@@ -592,10 +592,7 @@
     </div>
 
     <div class="substrate"></div>
-    <!-- Modal window of game_box -->
-    <aside id="popup_game">
 
-    </aside>
     <!-- Modal window -->
     <aside id="popup_modal" class="popup_modal">
         <img class="modal_backgrnd" src="./img/modal_background.png" alt="logo">
@@ -642,6 +639,55 @@
             <p>Pozdrawiam,</p> 
             <p>Eugeniusz Treciak (<i>Yauhen Tretsyak</i>)</p> <br>
         </div>
+    </aside>
+
+    <!-- Modal window of game_box -->
+    <aside id="game_modal" class="game_modal">
+        <img class="modal_backgrnd" src="./img/modal_background.png" alt="logo">
+        <img class="close_game" src="./img/close.png" alt="close">
+        <div class="lng_opt-game_form active">
+            <p class="form_text-game">Prosimy wypełnić dane <br> i wyśłać do nas</p>
+            <form id="game_form" class="form" action="mailer/smart.php" method="POST">
+                <input class="name" name="user_name" required type="text" placeholder="Imię i Nazwisko">
+                <input class="number" name="user_phone" required type="text" placeholder="Numer telefonu">
+                <p class="form_text-discont">Masz zniżkę:</p>
+                <input class="discount" type="text" name="user_discount" value="--%" disabled>
+                <button class="modal_submit" name="submit" type="submit">Wyśłę</button>
+                <!-- <input name="submit" type="hidden" value="wysłać"> -->
+            </form>
+        </div>
+        <div class="lng_opt-game_form">
+            <p class="form_text-game">Please, fill in the fields <br> and send it to us</p>
+            <form id="game_form_1" class="form" action="mailer/smart.php" method="POST">
+                <input class="name" name="user_name" required type="text" placeholder="Name & Surname">
+                <input class="number" name="user_phone" required type="text" placeholder="Number of phone">
+                <p class="form_text-discont">Your discount:</p>
+                <input class="discount" type="text" name="user_discount" value="--%" disabled>
+                <button class="modal_submit" name="submit" type="button">Send</button>
+                <!-- <input name="submit" type="hidden" value="send"> -->
+            </form>
+        </div>
+        <div class="lng_opt-game_form">
+            <p class="form_text-game">Пожалуйста, внесите данные <br> и вышлите нам</p>
+            <form id="game_form_2" class="form" action="mailer/smart.php" method="POST">
+                <input class="name" name="user_name" required type="text" placeholder="Имя и Фамилия">
+                <input class="number" name="user_phone" required type="text" placeholder="Номер телефона">
+                <p class="form_text-discont">Ваша скидка:</p>
+                <input class="discount" type="text" name="user_discount" value="--%" disabled>
+                <button class="modal_submit" name="submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Modal "End Game" -->
+    <aside class="end_game">
+        <img class="end_backgrnd" src="./img/modal_background.png" alt="logo">
+        <img class="close_end" src="./img/close.png" alt="close">
+            <div class="end_text_box">
+                <p class="lng_opt-end_game active">Chyba już masz zniżkę.</p>
+                <p class="lng_opt-end_game">You have the discount.</p>
+                <p class="lng_opt-end_game">Скидка уже получена.</p>
+            </div>
     </aside>
 
     <script src="public/bundle.js"></script>

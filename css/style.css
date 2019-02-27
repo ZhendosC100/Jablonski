@@ -152,16 +152,20 @@ body {
 .lng_opt-rules,
 .lng_opt-comments,
 .lng_opt-promo_start,
+.lng_opt-game_form,
 #promo,
 .slide_comments,
 .lng_opt-slide,
 .lng_opt-two_slide,
 .popup_modal,
 .popup_modal-time,
+.game_modal,
 .lng_opt-popup_form,
 .lng_opt-about_us,
 .menu_invisible,
-.lng_opt-hidemen {
+.lng_opt-hidemen,
+.lng_opt-end_game,
+.end_game {
   display: none;
 }
 
@@ -180,6 +184,10 @@ body {
           animation-name: activated;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+}
+
+.active_end {
+  display: block;
 }
 
 .info-up, .lang-block, .info-down, .social {
@@ -835,10 +843,11 @@ a {
 }
 
 .popup_modal,
+.game_modal,
 .popup_modal-time {
   background-color: #161718;
   position: fixed;
-  left: 36%;
+  left: 40%;
   top: 24%;
   width: 400px;
   height: 400px;
@@ -853,9 +862,18 @@ a {
   margin: 0 auto;
   margin-top: 30px;
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.name, .number {
+.name,
+.number,
+.discount {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #cc0000), color-stop(87%, #ff0000));
   background-image: linear-gradient(#cc0000 13%, #ff0000 87%);
   border: none;
@@ -870,28 +888,45 @@ a {
   width: 100%;
 }
 
-.name::-webkit-input-placeholder, .number::-webkit-input-placeholder {
+.discount {
+  margin: 0 auto;
+  width: 15%;
+  padding: 0;
+  text-align: center;
+}
+
+.name::-webkit-input-placeholder,
+.number::-webkit-input-placeholder,
+.discount::-webkit-input-placeholder {
   text-align: center;
   color: white;
 }
 
-.name:-ms-input-placeholder, .number:-ms-input-placeholder {
+.name:-ms-input-placeholder,
+.number:-ms-input-placeholder,
+.discount:-ms-input-placeholder {
   text-align: center;
   color: white;
 }
 
-.name::-ms-input-placeholder, .number::-ms-input-placeholder {
+.name::-ms-input-placeholder,
+.number::-ms-input-placeholder,
+.discount::-ms-input-placeholder {
   text-align: center;
   color: white;
 }
 
-.name::placeholder, .number::placeholder {
+.name::placeholder,
+.number::placeholder,
+.discount::placeholder {
   text-align: center;
   color: white;
 }
 
 .close,
-.close_time {
+.close_game,
+.close_time,
+.close_end {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -900,7 +935,9 @@ a {
 }
 
 .close:hover,
-.close_time:hover {
+.close_game:hover,
+.close_time:hover,
+.close_end:hover {
   cursor: pointer;
 }
 
@@ -913,13 +950,20 @@ a {
   z-index: -1;
 }
 
-.form_text {
+.form_text,
+.form_text-discont,
+.form_text-game {
   text-align: center;
   font-family: "GothaBol";
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+.form_text-discont {
+  text-transform: none;
+  margin: 10px;
 }
 
 .modal_submit {
@@ -943,11 +987,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: center;
-          flex-direction: center;
-  margin: 9% 0 0 20%;
+  margin: 13px auto;
 }
 
 .modal_submit:hover {
@@ -955,6 +995,48 @@ a {
   border: 1px solid #ffffff;
   -webkit-box-shadow: 1px 2px 3px 6px #f0162b;
           box-shadow: 1px 2px 3px 6px #f0162b;
+}
+
+.end_text_box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.end_game {
+  background-color: #161718;
+  position: fixed;
+  left: 40%;
+  top: 24%;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  z-index: 9;
+}
+
+.lng_opt-end_game {
+  width: 60%;
+  text-align: center;
+}
+
+.end_backgrnd {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .substrate_active {
@@ -1042,6 +1124,7 @@ a {
     margin: 17% 10% 9% 0;
   }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     left: 35%;
   }
@@ -1049,6 +1132,7 @@ a {
 
 @media (max-width: 1199px) {
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     left: 33%;
   }
@@ -1192,6 +1276,7 @@ a {
     z-index: 4;
   }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     left: 31%;
   }
@@ -1758,6 +1843,7 @@ a {
     font-size: 11px;
   }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     left: 17%;
   }
@@ -1773,6 +1859,7 @@ a {
     width: 28px;
   }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     left: 2%;
   }
@@ -1973,6 +2060,7 @@ a {
     bottom: -16px;
   }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     width: 325px;
     height: 325px;
@@ -1983,11 +2071,20 @@ a {
     width: 325px;
   }
   .close,
+  .close_game,
   .close_time {
     right: 10px;
     top: 10px;
     width: 30px;
     height: 30px;
+  }
+  .form_text-game {
+    margin-bottom: 10px;
+  }
+  .form_text-game,
+  .form_text-discont {
+    font-size: 16px;
+    margin-top: 10px;
   }
   .open_ru {
     font-size: 8px;
@@ -2046,13 +2143,25 @@ a {
 }
 
 @media (max-width: 322px) {
+  .end_game {
+    width: 301px;
+    height: 150px;
+  }
+  .close_end {
+    width: 15px;
+    height: 15px;
+    right: 3px;
+    top: 3px;
+  }
   .popup_modal,
+  .game_modal,
   .popup_modal-time {
     width: 301px;
     height: 325px;
     left: 3%;
   }
   .close,
+  .close_game,
   .close_time {
     right: 1px;
     top: 1px;

@@ -138,16 +138,20 @@ body
 .lng_opt-rules,
 .lng_opt-comments,
 .lng_opt-promo_start,
+.lng_opt-game_form,
 #promo,
 .slide_comments,
 .lng_opt-slide,
 .lng_opt-two_slide,
 .popup_modal,
 .popup_modal-time,
+.game_modal,
 .lng_opt-popup_form,
 .lng_opt-about_us,
 .menu_invisible,
-.lng_opt-hidemen
+.lng_opt-hidemen,
+.lng_opt-end_game,
+.end_game
     display: none
 
 .box_menu
@@ -161,6 +165,9 @@ body
     display: block 
     animation-name: activated
     animation-duration: 3s 
+
+.active_end
+    display: block
 
 .info-up, .lang-block, .info-down, .social
     @include flexable
@@ -660,10 +667,11 @@ a
 
 // ## Modal ##
 .popup_modal,
+.game_modal,
 .popup_modal-time
     background-color: #161718
     position: fixed
-    left: 36%
+    left: 40%
     top: 24%
     width: 400px
     height: 400px
@@ -676,8 +684,12 @@ a
     margin: 0 auto
     margin-top: 30px
     width: 70%
+    display: flex
+    flex-direction: column
 
-.name, .number 
+.name, 
+.number,
+.discount 
     background-image: linear-gradient(#cc0000 13%, #ff0000 87%)
     border: none
     border-radius: 12px
@@ -688,13 +700,22 @@ a
     margin-top: 5px
     height: 40px
     width: 100%
+.discount
+    margin: 0 auto
+    width: 15%
+    padding: 0
+    text-align: center
 
-.name::placeholder, .number::placeholder
+.name::placeholder, 
+.number::placeholder,
+.discount::placeholder
     text-align: center
     color: white
 
 .close,
-.close_time
+.close_game,
+.close_time,
+.close_end
     position: absolute
     right: 15px
     top: 15px
@@ -702,7 +723,9 @@ a
     height: 35px
 
 .close:hover,
-.close_time:hover
+.close_game:hover,
+.close_time:hover,
+.close_end:hover
     @include crsr
 
 
@@ -714,13 +737,19 @@ a
     left: 0
     z-index: -1
 
-.form_text
+.form_text,
+.form_text-discont,
+.form_text-game
     text-align: center
     font-family: "GothaBol"
     font-size: 24px
     font-weight: 800
     text-transform: uppercase
     margin-top: 50px
+
+.form_text-discont
+    text-transform: none
+    margin: 10px
 
 .modal_submit
     @include buttons
@@ -730,11 +759,45 @@ a
     padding: 0
     display: flex
     justify-content: center
-    flex-direction: center
-    margin: 9% 0 0 20%
+    margin: 13px auto
+    // flex-direction: center
+    // margin: 9% 0 0 20%
 
 .modal_submit:hover
     @include buttons_hover
+
+//----------------------------##### Modal of message about end #####----------
+.end_text_box
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+.end_game
+    background-color: #161718
+    position: fixed
+    left: 40%
+    top: 24%
+    font-size: 26px
+    text-transform: uppercase
+    font-weight: 900
+    width: 400px
+    height: 200px
+    border: 1px solid #ffffff
+    border-radius: 12px
+    z-index: 9
+
+.lng_opt-end_game
+    width: 60%
+    text-align: center
+
+.end_backgrnd
+    height: 200px
+    width: 200px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
 
 .substrate_active
     animation-name: animated_substrate
@@ -807,6 +870,7 @@ a
     .lng_opt-about_us
         margin: 17% 10% 9% 0
     .popup_modal,
+    .game_modal,
     .popup_modal-time
         left: 35%
 
@@ -814,6 +878,7 @@ a
 
 @media (max-width: 1199px)
     .popup_modal,
+    .game_modal,
     .popup_modal-time
         left: 33%
     .info-up
@@ -916,6 +981,7 @@ a
         margin-left: -71%
         z-index: 4
     .popup_modal,
+    .game_modal,
     .popup_modal-time
         left: 31%
     .lng_opt-hidemen
@@ -1332,6 +1398,7 @@ a
     .call_link
         font-size: 11px
     .popup_modal,
+    .game_modal,
     .popup_modal-time
         left: 17%
 
@@ -1343,7 +1410,8 @@ a
     .arrow_up
         height: 28px
         width: 28px
-    .popup_modal, 
+    .popup_modal,
+    .game_modal, 
     .popup_modal-time
         left: 2%
     .logo
@@ -1484,7 +1552,8 @@ a
         font-size: 14px
     .move_up
         bottom: -16px
-    .popup_modal, 
+    .popup_modal,
+    .game_modal, 
     .popup_modal-time
         width: 325px
         height: 325px
@@ -1493,11 +1562,18 @@ a
         height: 325px
         width: 325px
     .close,
+    .close_game,
     .close_time
         right: 10px
         top: 10px   
         width: 30px
         height: 30px
+    .form_text-game
+        margin-bottom: 10px
+    .form_text-game,
+    .form_text-discont
+        font-size: 16px
+        margin-top: 10px
     .open_ru
         font-size: 8px
     // #select
@@ -1540,14 +1616,24 @@ a
     .button_feedback
         width: 110px
 
-// --------------### MEDIA max-width: 376px (iphone 6,7,8,X) ###-------------------
+// --------------### MEDIA max-width: 322px (iphone 5,5s,SE) ###-------------------
 @media (max-width: 322px)
-    .popup_modal, 
+    .end_game
+        width: 301px
+        height: 150px
+    .close_end
+        width: 15px
+        height: 15px
+        right: 3px
+        top: 3px
+    .popup_modal,
+    .game_modal, 
     .popup_modal-time
         width: 301px
         height: 325px
         left: 3%
-    .close, 
+    .close,
+    .close_game, 
     .close_time
         right: 1px
         top: 1px

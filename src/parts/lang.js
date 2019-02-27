@@ -15,6 +15,8 @@ export default function language() {
         popupForm = document.querySelectorAll('.lng_opt-popup_form'),
         aboutBox = document.querySelectorAll('.lng_opt-about_us'),
         menuBox = document.querySelectorAll('.lng_opt-hidemen'),
+        gameBox = document.querySelectorAll('.lng_opt-game_form'),
+        endGameBox = document.querySelectorAll('.lng_opt-end_game'),
         s = 0;
 
     let langNonActive = (b, name_box) =>{
@@ -47,6 +49,8 @@ export default function language() {
         langNonActive(0, popupForm);
         langNonActive(0, aboutBox);
         langNonActive(0, menuBox);
+        langNonActive(0, gameBox);
+        langNonActive(0, endGameBox);
 
         langActive(s, langBox);
         langActive(s, openBox);
@@ -62,6 +66,8 @@ export default function language() {
         langActive(s, popupForm);
         langActive(s, aboutBox);
         langActive(s, menuBox);
+        langActive(s, gameBox);
+        langActive(s, endGameBox);
 
 
     });
