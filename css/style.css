@@ -408,7 +408,8 @@ option {
 }
 
 .model {
-  margin: 3.5% 0 9% 5%;
+  margin: 3.5% 0 0 5%;
+  margin-bottom: 70px;
   font-size: 23px;
   font-weight: 600;
   letter-spacing: -0.74px;
@@ -889,6 +890,7 @@ a {
 }
 
 .discount {
+  opacity: 1;
   color: black;
   margin: 0 auto;
   width: 20%;
