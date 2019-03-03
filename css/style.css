@@ -431,7 +431,7 @@ p.price-list:nth-child(2n) {
 .price_info {
   color: black;
   position: absolute;
-  top: 162px;
+  top: 181px;
   left: 30%;
   width: 64%;
   z-index: 2;
@@ -497,7 +497,7 @@ p.price-list:nth-child(2n) {
 
 .text_price {
   position: absolute;
-  top: 79px;
+  top: 12px;
   left: 30%;
 }
 
@@ -1071,18 +1071,43 @@ a {
 }
 
 @media (max-width: 1820px) {
+  .price_info {
+    top: 174px;
+  }
   .text_price {
-    top: 23px;
+    top: 12px;
+  }
+  .lng_opt-call {
+    margin-left: -38%;
   }
 }
 
 @media (max-width: 1720px) {
+  .price_info {
+    top: 166px;
+  }
   .text_price {
     top: 13px;
   }
 }
 
+@media (max-width: 1620px) {
+  .price_info {
+    top: 156px;
+  }
+}
+
 @media (max-width: 1520px) {
+  .info-down {
+    padding-left: 26px;
+  }
+  .lng_opt-call {
+    margin-left: -31%;
+  }
+  .img_phone {
+    left: 39%;
+    width: 669px;
+  }
   .price_info {
     top: 150px;
   }
@@ -1125,7 +1150,7 @@ a {
   }
   .img_phone {
     width: 560px;
-    left: 37%;
+    left: 35%;
     top: 68px;
   }
   .model {
@@ -1180,7 +1205,7 @@ a {
     top: 127px;
   }
   .text_price {
-    top: 21px;
+    top: 20px;
   }
 }
 
@@ -1254,11 +1279,11 @@ a {
     top: 118px;
   }
   .text_price {
-    top: 24px;
+    top: 25px;
     left: 22%;
   }
   .img_phone {
-    left: 34%;
+    left: 33%;
     width: 500px;
     top: 67px;
   }
@@ -1291,7 +1316,10 @@ a {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  .box_menu {
+    width: 10%;
+  }
   .info_up {
     position: relative;
   }
