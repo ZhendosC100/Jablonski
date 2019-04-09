@@ -72,6 +72,9 @@ export default function gamePlay() {
         substrate.classList.remove('substrate_active');
         body.classList.remove('stop-scrolling');
         cancelGame();
+        for (let i = 0; i < text_disc.length; i++){
+            text_disc[i].value = '--%';
+        } 
     });
 
     close_end.addEventListener('click', () => {
